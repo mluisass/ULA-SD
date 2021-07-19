@@ -1,0 +1,8 @@
+|dec_segmento_E
+e <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+X2 => and_E2.IN0
+X1 => not_x1.IN0
+X3 => not_X3.IN0
+X0 => and_E1.IN1
+
+

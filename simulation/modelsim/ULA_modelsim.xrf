@@ -1,0 +1,16 @@
+vendor_name = ModelSim
+source_file = 1, C:/Users/55819/Desktop/ULA-SD/dec_segmento_A.bdf
+source_file = 1, C:/Users/55819/Desktop/ULA-SD/dec_segmento_B.bdf
+source_file = 1, C:/Users/55819/Desktop/ULA-SD/dec_segmento_C.bdf
+source_file = 1, C:/Users/55819/Desktop/ULA-SD/dec_segmento_E.bdf
+source_file = 1, C:/Users/55819/Desktop/ULA-SD/db/ULA.cbx.xml
+design_name = dec_segmento_E
+instance = comp, \e~output , e~output, dec_segmento_E, 1
+instance = comp, \X2~input , X2~input, dec_segmento_E, 1
+instance = comp, \X1~input , X1~input, dec_segmento_E, 1
+instance = comp, \X3~input , X3~input, dec_segmento_E, 1
+instance = comp, \X0~input , X0~input, dec_segmento_E, 1
+design_name = hard_block
+instance = comp, \~ALTERA_ASDO_DATA1~~ibuf , ~ALTERA_ASDO_DATA1~~ibuf, hard_block, 1
+instance = comp, \~ALTERA_FLASH_nCE_nCSO~~ibuf , ~ALTERA_FLASH_nCE_nCSO~~ibuf, hard_block, 1
+instance = comp, \~ALTERA_DATA0~~ibuf , ~ALTERA_DATA0~~ibuf, hard_block, 1
