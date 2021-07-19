@@ -1,4 +1,65 @@
-|conv_D6
+|conv_2_digitos
+D2 <= conv_D2:C_D2.D2
+F[0] => D8.DATAIN
+F[1] => conv_D3:C_D3.X1
+F[1] => conv_D5:C_D5.X1
+F[1] => conv_D6:C_D6.X1
+F[1] => conv_D7:C_D7.X1
+F[2] => conv_D2:C_D2.X2
+F[2] => conv_D3:C_D3.X2
+F[2] => conv_D5:C_D5.X2
+F[2] => conv_D6:C_D6.X2
+F[2] => conv_D7:C_D7.X2
+F[3] => conv_D2:C_D2.X3
+F[3] => conv_D3:C_D3.X3
+F[3] => conv_D5:C_D5.X3
+F[3] => conv_D6:C_D6.X3
+F[3] => conv_D7:C_D7.X3
+F[4] => conv_D2:C_D2.X4
+F[4] => conv_D3:C_D3.X4
+F[4] => conv_D5:C_D5.X4
+F[4] => conv_D6:C_D6.X4
+F[4] => conv_D7:C_D7.X4
+F[5] => ~NO_FANOUT~
+D3 <= conv_D3:C_D3.D3
+D4 <= <GND>
+D5 <= conv_D5:C_D5.D5
+D6 <= conv_D6:C_D6.D6
+D7 <= conv_D7:C_D7.D7
+D8 <= F[0].DB_MAX_OUTPUT_PORT_TYPE
+D1 <= <GND>
+
+
+|conv_2_digitos|conv_D2:C_D2
+D2 <= or_D2_1.DB_MAX_OUTPUT_PORT_TYPE
+X4 => and_D2_2.IN0
+X4 => and_D2_1.IN0
+X2 => and_D2_2.IN1
+X3 => and_D2_1.IN1
+
+
+|conv_2_digitos|conv_D3:C_D3
+D3 <= or_D3.DB_MAX_OUTPUT_PORT_TYPE
+X4 => and_D3.IN0
+X4 => not_x4.IN0
+X3 => and_D3.IN1
+X2 => and_D3.IN2
+X1 => and_D3.IN3
+
+
+|conv_2_digitos|conv_D5:C_D5
+D5 <= or_D5.DB_MAX_OUTPUT_PORT_TYPE
+X4 => and_D5_2.IN0
+X4 => not_x4.IN0
+X3 => and_D5_2.IN1
+X3 => not_x3.IN0
+X2 => and_D5_2.IN2
+X2 => not_x2.IN0
+X1 => not_x1.IN0
+X1 => and_D5_1.IN3
+
+
+|conv_2_digitos|conv_D6:C_D6
 D6 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 X4 => inst.IN0
 X4 => inst1.IN0
@@ -9,5 +70,15 @@ X1 => inst.IN2
 X1 => not_x1.IN0
 X2 => inst3.IN1
 X2 => not_X2.IN0
+
+
+|conv_2_digitos|conv_D7:C_D7
+D7 <= or_D7.DB_MAX_OUTPUT_PORT_TYPE
+X3 => not_x3.IN0
+X3 => and_D7_1.IN1
+X2 => and_D7_2.IN1
+X2 => not_x2.IN0
+X1 => not_x1.IN0
+X4 => and_D7_1.IN0
 
 
