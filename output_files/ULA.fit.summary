@@ -1,15 +1,15 @@
-Fitter Status : Successful - Mon Jul 19 18:54:38 2021
+Fitter Status : Successful - Mon Jul 19 19:27:58 2021
 Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 Revision Name : ULA
-Top-level Entity Name : conv_2_digitos
+Top-level Entity Name : conv_1_digito
 Family : Cyclone IV E
 Device : EP4CE6E22C6
 Timing Models : Final
-Total logic elements : 5 / 6,272 ( < 1 % )
-    Total combinational functions : 5 / 6,272 ( < 1 % )
+Total logic elements : 0 / 6,272 ( 0 % )
+    Total combinational functions : 0 / 6,272 ( 0 % )
     Dedicated logic registers : 0 / 6,272 ( 0 % )
 Total registers : 0
-Total pins : 14 / 92 ( 15 % )
+Total pins : 12 / 92 ( 13 % )
 Total virtual pins : 0
 Total memory bits : 0 / 276,480 ( 0 % )
 Embedded Multiplier 9-bit elements : 0 / 30 ( 0 % )
