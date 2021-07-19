@@ -17,7 +17,7 @@
 // PROGRAM "Quartus Prime"
 // VERSION "Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition"
 
-// DATE "07/19/2021 16:57:32"
+// DATE "07/19/2021 17:10:03"
 
 // 
 // Device: Altera EP4CE6E22C6 Package TQFP144
@@ -29,20 +29,20 @@
 
 `timescale 1 ps/ 1 ps
 
-module dec_segmento_E (
-	e,
+module dec_segmento_D (
+	D,
 	X2,
 	X1,
-	X3,
-	X0);
-output 	e;
+	X0,
+	X3);
+output 	D;
 input 	X2;
 input 	X1;
-input 	X3;
 input 	X0;
+input 	X3;
 
 // Design Ports Information
-// e	=>  Location: PIN_34,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// D	=>  Location: PIN_34,	 I/O Standard: 2.5 V,	 Current Strength: Default
 // X2	=>  Location: PIN_32,	 I/O Standard: 2.5 V,	 Current Strength: Default
 // X0	=>  Location: PIN_43,	 I/O Standard: 2.5 V,	 Current Strength: Default
 // X1	=>  Location: PIN_33,	 I/O Standard: 2.5 V,	 Current Strength: Default
@@ -60,12 +60,12 @@ assign unknown = 1'bx;
 tri1 devclrn;
 tri1 devpor;
 tri1 devoe;
-wire \e~output_o ;
+wire \D~output_o ;
 wire \X2~input_o ;
 wire \X1~input_o ;
 wire \X3~input_o ;
 wire \X0~input_o ;
-wire \inst3~combout ;
+wire \or_D~0_combout ;
 
 
 hard_block auto_generated_inst(
@@ -74,16 +74,16 @@ hard_block auto_generated_inst(
 	.devoe(devoe));
 
 // Location: IOOBUF_X0_Y5_N16
-cycloneive_io_obuf \e~output (
-	.i(\inst3~combout ),
+cycloneive_io_obuf \D~output (
+	.i(\or_D~0_combout ),
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\e~output_o ),
+	.o(\D~output_o ),
 	.obar());
 // synopsys translate_off
-defparam \e~output .bus_hold = "false";
-defparam \e~output .open_drain_output = "false";
+defparam \D~output .bus_hold = "false";
+defparam \D~output .open_drain_output = "false";
 // synopsys translate_on
 
 // Location: IOIBUF_X0_Y6_N15
@@ -127,23 +127,23 @@ defparam \X0~input .simulate_z_as = "z";
 // synopsys translate_on
 
 // Location: LCCOMB_X1_Y6_N0
-cycloneive_lcell_comb inst3(
+cycloneive_lcell_comb \or_D~0 (
 // Equation(s):
-// \inst3~combout  = (\X2~input_o  & (((!\X3~input_o  & \X0~input_o )) # (!\X1~input_o ))) # (!\X2~input_o  & (((!\X3~input_o  & \X0~input_o ))))
+// \or_D~0_combout  = (\X2~input_o  & (\X1~input_o  $ (((!\X0~input_o ))))) # (!\X2~input_o  & (!\X1~input_o  & (!\X3~input_o  & \X0~input_o )))
 
 	.dataa(\X2~input_o ),
 	.datab(\X1~input_o ),
 	.datac(\X3~input_o ),
 	.datad(\X0~input_o ),
 	.cin(gnd),
-	.combout(\inst3~combout ),
+	.combout(\or_D~0_combout ),
 	.cout());
 // synopsys translate_off
-defparam inst3.lut_mask = 16'h2F22;
-defparam inst3.sum_lutc_input = "datac";
+defparam \or_D~0 .lut_mask = 16'h8922;
+defparam \or_D~0 .sum_lutc_input = "datac";
 // synopsys translate_on
 
-assign e = \e~output_o ;
+assign D = \D~output_o ;
 
 endmodule
 

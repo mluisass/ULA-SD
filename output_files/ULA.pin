@@ -102,7 +102,7 @@ RESERVED_INPUT_WITH_WEAK_PULLUP : 30        :        :                   :      
 X3                           : 31        : input  : 2.5 V             :         : 2         : N              
 X2                           : 32        : input  : 2.5 V             :         : 2         : N              
 X1                           : 33        : input  : 2.5 V             :         : 2         : N              
-e                            : 34        : output : 2.5 V             :         : 2         : N              
+D                            : 34        : output : 2.5 V             :         : 2         : N              
 VCCA1                        : 35        : power  :                   : 2.5V    :           :                
 GNDA1                        : 36        : gnd    :                   :         :           :                
 VCCD_PLL1                    : 37        : power  :                   : 1.2V    :           :                

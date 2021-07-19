@@ -1,5 +1,5 @@
 Flow report for ULA
-Mon Jul 19 16:57:32 2021
+Mon Jul 19 17:10:03 2021
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -41,10 +41,10 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Mon Jul 19 16:57:32 2021       ;
+; Flow Status                        ; Successful - Mon Jul 19 17:10:03 2021       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; ULA                                         ;
-; Top-level Entity Name              ; dec_segmento_E                              ;
+; Top-level Entity Name              ; dec_segmento_D                              ;
 ; Family                             ; Cyclone IV E                                ;
 ; Total logic elements               ; 1 / 6,272 ( < 1 % )                         ;
 ;     Total combinational functions  ; 1 / 6,272 ( < 1 % )                         ;
@@ -65,7 +65,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 07/19/2021 16:57:11 ;
+; Start date & time ; 07/19/2021 17:09:39 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; ULA                 ;
 +-------------------+---------------------+
@@ -76,7 +76,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------+----------------------------------------+---------------+----------------+-----------------------------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name    ; Section Id                        ;
 +-------------------------------------+----------------------------------------+---------------+----------------+-----------------------------------+
-; COMPILER_SIGNATURE_ID               ; 102037068763149.162672463118040        ; --            ; --             ; --                                ;
+; COMPILER_SIGNATURE_ID               ; 102037068763149.162672537911384        ; --            ; --             ; --                                ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --             ; eda_board_design_timing           ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --             ; eda_board_design_boundary_scan    ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --             ; eda_board_design_signal_integrity ;
@@ -84,11 +84,11 @@ https://fpgasoftware.intel.com/eula.
 ; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl                            ; --            ; --             ; eda_simulation                    ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim (Verilog)                     ; <None>        ; --             ; --                                ;
 ; EDA_TIME_SCALE                      ; 1 ps                                   ; --            ; --             ; eda_simulation                    ;
-; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; dec_segmento_E ; Top                               ;
-; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --            ; dec_segmento_E ; Top                               ;
-; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --            ; dec_segmento_E ; Top                               ;
+; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; dec_segmento_D ; Top                               ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --            ; dec_segmento_D ; Top                               ;
+; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --            ; dec_segmento_D ; Top                               ;
 ; PROJECT_OUTPUT_DIRECTORY            ; output_files                           ; --            ; --             ; --                                ;
-; TOP_LEVEL_ENTITY                    ; dec_segmento_E                         ; ULA           ; --             ; --                                ;
+; TOP_LEVEL_ENTITY                    ; dec_segmento_D                         ; ULA           ; --             ; --                                ;
 +-------------------------------------+----------------------------------------+---------------+----------------+-----------------------------------+
 
 
@@ -97,12 +97,12 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:09     ; 1.0                     ; 4737 MB             ; 00:00:21                           ;
-; Fitter               ; 00:00:04     ; 1.0                     ; 5483 MB             ; 00:00:04                           ;
+; Analysis & Synthesis ; 00:00:10     ; 1.0                     ; 4745 MB             ; 00:00:22                           ;
+; Fitter               ; 00:00:05     ; 1.0                     ; 5482 MB             ; 00:00:05                           ;
 ; Assembler            ; 00:00:01     ; 1.0                     ; 4678 MB             ; 00:00:01                           ;
-; Timing Analyzer      ; 00:00:02     ; 1.0                     ; 4767 MB             ; 00:00:02                           ;
-; EDA Netlist Writer   ; 00:00:00     ; 1.0                     ; 4632 MB             ; 00:00:01                           ;
-; Total                ; 00:00:16     ; --                      ; --                  ; 00:00:29                           ;
+; Timing Analyzer      ; 00:00:03     ; 1.0                     ; 4765 MB             ; 00:00:03                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4632 MB             ; 00:00:01                           ;
+; Total                ; 00:00:20     ; --                      ; --                  ; 00:00:32                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
