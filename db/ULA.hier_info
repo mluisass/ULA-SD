@@ -1,4 +1,92 @@
-|dec_segmento_D
+|dec_7_segmentos
+g <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+ENABLE => inst13.IN0
+ENABLE => inst12.IN0
+ENABLE => inst7.IN0
+ENABLE => inst8.IN0
+ENABLE => inst9.IN0
+ENABLE => inst10.IN0
+ENABLE => inst11.IN0
+X[0] => dec_segmento_G:inst1.X0
+X[0] => dec_segmento_F:inst6.X0
+X[0] => dec_segmento_A:inst.X0
+X[0] => dec_segmento_B:inst2.X0
+X[0] => dec_segmento_C:inst3.X0
+X[0] => dec_segmento_D:inst4.X0
+X[0] => dec_segmento_E:inst5.X0
+X[1] => dec_segmento_G:inst1.X1
+X[1] => dec_segmento_F:inst6.X1
+X[1] => dec_segmento_A:inst.X1
+X[1] => dec_segmento_B:inst2.X1
+X[1] => dec_segmento_C:inst3.X1
+X[1] => dec_segmento_D:inst4.X1
+X[1] => dec_segmento_E:inst5.X1
+X[2] => dec_segmento_G:inst1.X2
+X[2] => dec_segmento_F:inst6.X2
+X[2] => dec_segmento_A:inst.X2
+X[2] => dec_segmento_B:inst2.X2
+X[2] => dec_segmento_C:inst3.X2
+X[2] => dec_segmento_D:inst4.X2
+X[2] => dec_segmento_E:inst5.X2
+X[3] => dec_segmento_G:inst1.X3
+X[3] => dec_segmento_A:inst.X3
+X[3] => dec_segmento_D:inst4.X3
+X[3] => dec_segmento_E:inst5.X3
+f <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+a <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+b <= inst8.DB_MAX_OUTPUT_PORT_TYPE
+c <= inst9.DB_MAX_OUTPUT_PORT_TYPE
+d <= inst10.DB_MAX_OUTPUT_PORT_TYPE
+e <= inst11.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|dec_7_segmentos|dec_segmento_G:inst1
+G <= or_G_1.DB_MAX_OUTPUT_PORT_TYPE
+X1 => not_x1.IN0
+X1 => and_G_1.IN1
+X2 => not_x2.IN0
+X2 => and_G_1.IN2
+X3 => not_x3.IN0
+X0 => and_G_1.IN0
+
+
+|dec_7_segmentos|dec_segmento_F:inst6
+F <= or_F_1.DB_MAX_OUTPUT_PORT_TYPE
+X1 => and_F_2.IN0
+X1 => and_F_1.IN0
+X0 => and_F_2.IN1
+X0 => and_F_3.IN0
+X2 => not_x2.IN0
+
+
+|dec_7_segmentos|dec_segmento_A:inst
+a <= or-A.DB_MAX_OUTPUT_PORT_TYPE
+X3 => not-x3.IN0
+X2 => not-x2.IN0
+X2 => and-A-1.IN0
+X1 => not-x1.IN0
+X0 => and-A-2.IN3
+X0 => not-x0.IN0
+
+
+|dec_7_segmentos|dec_segmento_B:inst2
+b <= OR_B.DB_MAX_OUTPUT_PORT_TYPE
+X2 => and_B2.IN0
+X2 => and_B1.IN0
+X1 => and_B2.IN1
+X1 => not_x1.IN0
+X0 => not_x0.IN0
+X0 => and_B1.IN2
+
+
+|dec_7_segmentos|dec_segmento_C:inst3
+c <= AND_C.DB_MAX_OUTPUT_PORT_TYPE
+X2 => not_X2.IN0
+X1 => AND_C.IN1
+X0 => not_X0.IN0
+
+
+|dec_7_segmentos|dec_segmento_D:inst4
 D <= or_D.DB_MAX_OUTPUT_PORT_TYPE
 X2 => and_D_2.IN0
 X2 => not_x2.IN0
@@ -9,5 +97,13 @@ X0 => and_D_2.IN2
 X0 => and_D_3.IN3
 X0 => not_x0.IN0
 X3 => not_x3.IN0
+
+
+|dec_7_segmentos|dec_segmento_E:inst5
+e <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+X2 => and_E2.IN0
+X1 => not_x1.IN0
+X3 => not_X3.IN0
+X0 => and_E1.IN1
 
 
