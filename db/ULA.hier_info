@@ -1,20 +1,32 @@
-|somador_4_bits
-S[0] <= somador_1_bit:inst7.Sn
-S[1] <= somador_1_bit:inst6.Sn
-S[2] <= somador_1_bit:inst5.Sn
-S[3] <= somador_1_bit:inst.Sn
-S[4] <= somador_1_bit:inst.Cn1
-B[0] => somador_1_bit:inst7.Bn
-B[1] => somador_1_bit:inst6.Bn
-B[2] => somador_1_bit:inst5.Bn
-B[3] => somador_1_bit:inst.Bn
-A[0] => somador_1_bit:inst7.An
-A[1] => somador_1_bit:inst6.An
-A[2] => somador_1_bit:inst5.An
-A[3] => somador_1_bit:inst.An
+|complemento_2
+S[0] <= somador_4_bits:inst.S0
+S[1] <= somador_4_bits:inst.S1
+S[2] <= somador_4_bits:inst.S2
+S[3] <= somador_4_bits:inst.S3
+S[4] <= <VCC>
+I0 => not_I0.IN0
+I1 => not_I1.IN0
+I2 => not_I2.IN0
+I3 => not_I3.IN0
 
 
-|somador_4_bits|somador_1_bit:inst7
+|complemento_2|somador_4_bits:inst
+S0 <= somador_1_bit:inst7.Sn
+B0 => somador_1_bit:inst7.Bn
+A0 => somador_1_bit:inst7.An
+S1 <= somador_1_bit:inst6.Sn
+B1 => somador_1_bit:inst6.Bn
+A1 => somador_1_bit:inst6.An
+S2 <= somador_1_bit:inst5.Sn
+B2 => somador_1_bit:inst5.Bn
+A2 => somador_1_bit:inst5.An
+S3 <= somador_1_bit:inst.Sn
+B3 => somador_1_bit:inst.Bn
+A3 => somador_1_bit:inst.An
+S4 <= somador_1_bit:inst.Cn1
+
+
+|complemento_2|somador_4_bits:inst|somador_1_bit:inst7
 Sn <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 Bn => inst2.IN0
 Bn => inst.IN1
@@ -25,7 +37,7 @@ Cn => inst1.IN0
 Cn1 <= inst4.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|somador_4_bits|somador_1_bit:inst6
+|complemento_2|somador_4_bits:inst|somador_1_bit:inst6
 Sn <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 Bn => inst2.IN0
 Bn => inst.IN1
@@ -36,7 +48,7 @@ Cn => inst1.IN0
 Cn1 <= inst4.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|somador_4_bits|somador_1_bit:inst5
+|complemento_2|somador_4_bits:inst|somador_1_bit:inst5
 Sn <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 Bn => inst2.IN0
 Bn => inst.IN1
@@ -47,7 +59,7 @@ Cn => inst1.IN0
 Cn1 <= inst4.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|somador_4_bits|somador_1_bit:inst
+|complemento_2|somador_4_bits:inst|somador_1_bit:inst
 Sn <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 Bn => inst2.IN0
 Bn => inst.IN1
