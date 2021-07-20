@@ -1,15 +1,60 @@
-|conv_1_digito
-D8 <= F0.DB_MAX_OUTPUT_PORT_TYPE
-F0 => D8.DATAIN
-D7 <= F1.DB_MAX_OUTPUT_PORT_TYPE
-F1 => D7.DATAIN
-D6 <= F2.DB_MAX_OUTPUT_PORT_TYPE
-F2 => D6.DATAIN
-D5 <= F3.DB_MAX_OUTPUT_PORT_TYPE
-F3 => D5.DATAIN
-D1 <= <GND>
-D2 <= <GND>
-D3 <= <GND>
-D4 <= <GND>
+|somador_4_bits
+S[0] <= somador_1_bit:inst7.Sn
+S[1] <= somador_1_bit:inst6.Sn
+S[2] <= somador_1_bit:inst5.Sn
+S[3] <= somador_1_bit:inst.Sn
+S[4] <= somador_1_bit:inst.Cn1
+B[0] => somador_1_bit:inst7.Bn
+B[1] => somador_1_bit:inst6.Bn
+B[2] => somador_1_bit:inst5.Bn
+B[3] => somador_1_bit:inst.Bn
+A[0] => somador_1_bit:inst7.An
+A[1] => somador_1_bit:inst6.An
+A[2] => somador_1_bit:inst5.An
+A[3] => somador_1_bit:inst.An
+
+
+|somador_4_bits|somador_1_bit:inst7
+Sn <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Bn => inst2.IN0
+Bn => inst.IN1
+An => inst2.IN1
+An => inst.IN0
+Cn => inst3.IN1
+Cn => inst1.IN0
+Cn1 <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|somador_4_bits|somador_1_bit:inst6
+Sn <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Bn => inst2.IN0
+Bn => inst.IN1
+An => inst2.IN1
+An => inst.IN0
+Cn => inst3.IN1
+Cn => inst1.IN0
+Cn1 <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|somador_4_bits|somador_1_bit:inst5
+Sn <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Bn => inst2.IN0
+Bn => inst.IN1
+An => inst2.IN1
+An => inst.IN0
+Cn => inst3.IN1
+Cn => inst1.IN0
+Cn1 <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|somador_4_bits|somador_1_bit:inst
+Sn <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Bn => inst2.IN0
+Bn => inst.IN1
+An => inst2.IN1
+An => inst.IN0
+Cn => inst3.IN1
+Cn => inst1.IN0
+Cn1 <= inst4.DB_MAX_OUTPUT_PORT_TYPE
 
 
