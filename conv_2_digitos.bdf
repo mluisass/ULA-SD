@@ -157,7 +157,7 @@ https://fpgasoftware.intel.com/eula.
 )
 (pin
 	(output)
-	(rect 288 240 304 416)
+	(rect 288 168 304 344)
 	(text "OUTPUT" (rect 6 1 16 39)(font "Arial" (font_size 6))(vertical))
 	(text "D1" (rect 6 88 23 100)(font "Intel Clear" )(vertical))
 	(pt 8 0)
@@ -191,7 +191,7 @@ https://fpgasoftware.intel.com/eula.
 	(rotate180)
 )
 (symbol
-	(rect 280 208 312 240)
+	(rect 280 120 312 152)
 	(text "GND" (rect 3 6 24 16)(font "Arial" (font_size 6)))
 	(text "GND_D1" (rect 7 -6 47 11)(font "Intel Clear" )(invisible))
 	(port
@@ -625,6 +625,10 @@ https://fpgasoftware.intel.com/eula.
 	(pt 536 64)
 	(pt 664 64)
 	(bus)
+)
+(connector
+	(pt 296 152)
+	(pt 296 168)
 )
 (junction (pt 664 64))
 (junction (pt 680 64))
