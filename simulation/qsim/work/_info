@@ -1,0 +1,82 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/55819/Documents/ULA-SD/simulation/qsim
+vAND_completo
+Z1 !s110 1626907980
+!i10b 1
+!s100 YX>;Ai@6Nm`=UEn3L29g]0
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IL1ek3Qz]D4GYd[7>]I>?M2
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z4 w1626907979
+Z5 8ULA.vo
+Z6 FULA.vo
+!i122 2
+L0 32 325
+Z7 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z8 !s108 1626907980.000000
+Z9 !s107 ULA.vo|
+Z10 !s90 -work|work|ULA.vo|
+!i113 1
+Z11 o-work work
+Z12 tCvgOpt 0
+n@a@n@d_completo
+vAND_completo_vlg_vec_tst
+R1
+!i10b 1
+!s100 4lT3?=dCNfanBJN]j^[C61
+R2
+IeaPGzFWSI6iDWiG9?6zVP1
+R3
+R0
+R4
+8Waveform.vwf.vt
+FWaveform.vwf.vt
+!i122 3
+L0 30 1062
+R7
+r1
+!s85 0
+31
+R8
+!s107 Waveform.vwf.vt|
+!s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R11
+R12
+n@a@n@d_completo_vlg_vec_tst
+vhard_block
+R1
+!i10b 1
+!s100 0kT_Y0NZL2BlXdmFE3dPj0
+R2
+IWIz>7M]iMYgUlS562giAB2
+R3
+R0
+R4
+R5
+R6
+!i122 2
+L0 358 34
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
