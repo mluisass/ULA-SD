@@ -1,15 +1,15 @@
-Fitter Status : Successful - Wed Jul 21 19:56:49 2021
+Fitter Status : Successful - Wed Jul 21 20:38:37 2021
 Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 Revision Name : ULA
-Top-level Entity Name : XOR_completo
+Top-level Entity Name : MaiorQue_completo
 Family : Cyclone IV E
 Device : EP4CE6E22C6
 Timing Models : Final
-Total logic elements : 5 / 6,272 ( < 1 % )
-    Total combinational functions : 5 / 6,272 ( < 1 % )
+Total logic elements : 4 / 6,272 ( < 1 % )
+    Total combinational functions : 4 / 6,272 ( < 1 % )
     Dedicated logic registers : 0 / 6,272 ( 0 % )
 Total registers : 0
-Total pins : 15 / 92 ( 16 % )
+Total pins : 11 / 92 ( 12 % )
 Total virtual pins : 0
 Total memory bits : 0 / 276,480 ( 0 % )
 Embedded Multiplier 9-bit elements : 0 / 30 ( 0 % )

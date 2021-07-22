@@ -1,5 +1,5 @@
 Analysis & Synthesis report for ULA
-Wed Jul 21 19:56:45 2021
+Wed Jul 21 20:58:38 2021
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -43,16 +43,16 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Wed Jul 21 19:56:45 2021       ;
+; Analysis & Synthesis Status        ; Successful - Wed Jul 21 20:58:38 2021       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; ULA                                         ;
-; Top-level Entity Name              ; XOR_completo                                ;
+; Top-level Entity Name              ; Mux8_1_vetor                                ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 5                                           ;
-;     Total combinational functions  ; 5                                           ;
+; Total logic elements               ; 0                                           ;
+;     Total combinational functions  ; 0                                           ;
 ;     Dedicated logic registers      ; 0                                           ;
 ; Total registers                    ; 0                                           ;
-; Total pins                         ; 15                                          ;
+; Total pins                         ; 36                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
 ; Embedded Multiplier 9-bit elements ; 0                                           ;
@@ -65,7 +65,7 @@ https://fpgasoftware.intel.com/eula.
 +------------------------------------------------------------------+--------------------+--------------------+
 ; Option                                                           ; Setting            ; Default Value      ;
 +------------------------------------------------------------------+--------------------+--------------------+
-; Top-level entity name                                            ; XOR_completo       ; ULA                ;
+; Top-level entity name                                            ; Mux8_1_vetor       ; ULA                ;
 ; Family name                                                      ; Cyclone IV E       ; Cyclone V          ;
 ; Use smart compilation                                            ; Off                ; Off                ;
 ; Enable parallel Assembler and Timing Analyzer during compilation ; On                 ; On                 ;
@@ -166,40 +166,39 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------+-----------------+------------------------------------+--------------------------------------------------+---------+
 ; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                     ; Library ;
 +----------------------------------+-----------------+------------------------------------+--------------------------------------------------+---------+
-; XOR_completo.bdf                 ; yes             ; User Block Diagram/Schematic File  ; C:/Users/55819/Documents/ULA-SD/XOR_completo.bdf ;         ;
+; Mux8_1_vetor.bdf                 ; yes             ; User Block Diagram/Schematic File  ; C:/Users/55819/Documents/ULA-SD/Mux8_1_vetor.bdf ;         ;
 +----------------------------------+-----------------+------------------------------------+--------------------------------------------------+---------+
 
 
-+-----------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary         ;
-+---------------------------------------------+-------+
-; Resource                                    ; Usage ;
-+---------------------------------------------+-------+
-; Estimated Total logic elements              ; 5     ;
-;                                             ;       ;
-; Total combinational functions               ; 5     ;
-; Logic element usage by number of LUT inputs ;       ;
-;     -- 4 input functions                    ; 0     ;
-;     -- 3 input functions                    ; 0     ;
-;     -- <=2 input functions                  ; 5     ;
-;                                             ;       ;
-; Logic elements by mode                      ;       ;
-;     -- normal mode                          ; 5     ;
-;     -- arithmetic mode                      ; 0     ;
-;                                             ;       ;
-; Total registers                             ; 0     ;
-;     -- Dedicated logic registers            ; 0     ;
-;     -- I/O registers                        ; 0     ;
-;                                             ;       ;
-; I/O pins                                    ; 15    ;
-;                                             ;       ;
-; Embedded Multiplier 9-bit elements          ; 0     ;
-;                                             ;       ;
-; Maximum fan-out node                        ; xor5  ;
-; Maximum fan-out                             ; 1     ;
-; Total fan-out                               ; 30    ;
-; Average fan-out                             ; 0.86  ;
-+---------------------------------------------+-------+
++---------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                   ;
++---------------------------------------------+-----------------+
+; Resource                                    ; Usage           ;
++---------------------------------------------+-----------------+
+;                                             ;                 ;
+; Total combinational functions               ; 0               ;
+; Logic element usage by number of LUT inputs ;                 ;
+;     -- 4 input functions                    ; 0               ;
+;     -- 3 input functions                    ; 0               ;
+;     -- <=2 input functions                  ; 0               ;
+;                                             ;                 ;
+; Logic elements by mode                      ;                 ;
+;     -- normal mode                          ; 0               ;
+;     -- arithmetic mode                      ; 0               ;
+;                                             ;                 ;
+; Total registers                             ; 0               ;
+;     -- Dedicated logic registers            ; 0               ;
+;     -- I/O registers                        ; 0               ;
+;                                             ;                 ;
+; I/O pins                                    ; 36              ;
+;                                             ;                 ;
+; Embedded Multiplier 9-bit elements          ; 0               ;
+;                                             ;                 ;
+; Maximum fan-out node                        ; Saida[5]~output ;
+; Maximum fan-out                             ; 1               ;
+; Total fan-out                               ; 36              ;
+; Average fan-out                             ; 0.50            ;
++---------------------------------------------+-----------------+
 
 
 +-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -207,7 +206,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+--------------+
 ; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Entity Name  ; Library Name ;
 +----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+--------------+
-; |XOR_completo              ; 5 (5)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 15   ; 0            ; |XOR_completo       ; XOR_completo ; work         ;
+; |Mux8_1_vetor              ; 0 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 36   ; 0            ; |Mux8_1_vetor       ; Mux8_1_vetor ; work         ;
 +----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -232,13 +231,13 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 15                          ;
-; cycloneiii_lcell_comb ; 5                           ;
-;     normal            ; 5                           ;
-;         2 data inputs ; 5                           ;
+; boundary_port         ; 36                          ;
+; cycloneiii_lcell_comb ; 1                           ;
+;     normal            ; 1                           ;
+;         0 data inputs ; 1                           ;
 ;                       ;                             ;
-; Max LUT depth         ; 1.00                        ;
-; Average LUT depth     ; 1.00                        ;
+; Max LUT depth         ; 0.00                        ;
+; Average LUT depth     ; 0.00                        ;
 +-----------------------+-----------------------------+
 
 
@@ -257,7 +256,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Wed Jul 21 19:56:36 2021
+    Info: Processing started: Wed Jul 21 20:58:28 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ULA -c ULA
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -345,18 +344,74 @@ Info (12021): Found 1 design units, including 1 entities, in source file conv_co
     Info (12023): Found entity 1: conv_completo_2_digitos
 Info (12021): Found 1 design units, including 1 entities, in source file conv_completo_1_digito.bdf
     Info (12023): Found entity 1: conv_completo_1_digito
-Info (12127): Elaborating entity "XOR_completo" for the top level hierarchy
-Info (286030): Timing-Driven Synthesis is running
+Info (12127): Elaborating entity "Mux8_1_vetor" for the top level hierarchy
+Warning (275011): Block or symbol "OR6" of instance "inst5" overlaps another block or symbol
+Warning (275043): Pin "Saida[5..0]" is missing source
+Warning (275009): Pin "S2" not connected
+Warning (275009): Pin "S1" not connected
+Warning (275009): Pin "S0" not connected
+Warning (275009): Pin "AnD" not connected
+Warning (275009): Pin "Comp_2" not connected
+Warning (275009): Pin "Soma" not connected
+Warning (275009): Pin "Sub" not connected
+Warning (275009): Pin "XoR" not connected
+Warning (275008): Primitive "AND4" of instance "inst" not used
+Warning (275008): Primitive "AND4" of instance "inst1" not used
+Warning (275008): Primitive "AND4" of instance "inst2" not used
+Warning (275008): Primitive "AND4" of instance "inst3" not used
+Warning (275008): Primitive "AND4" of instance "inst4" not used
+Warning (275008): Primitive "OR6" of instance "inst5" not used
+Warning (275008): Primitive "GND" of instance "inst6" not used
+Warning (275008): Primitive "NOT" of instance "inst7" not used
+Warning (275008): Primitive "NOT" of instance "inst8" not used
+Warning (275008): Primitive "NOT" of instance "inst9" not used
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "Saida[5]" is stuck at GND
+    Warning (13410): Pin "Saida[4]" is stuck at GND
+    Warning (13410): Pin "Saida[3]" is stuck at GND
+    Warning (13410): Pin "Saida[2]" is stuck at GND
+    Warning (13410): Pin "Saida[1]" is stuck at GND
+    Warning (13410): Pin "Saida[0]" is stuck at GND
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 20 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 10 input pins
-    Info (21059): Implemented 5 output pins
-    Info (21061): Implemented 5 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4737 megabytes
-    Info: Processing ended: Wed Jul 21 19:56:45 2021
-    Info: Elapsed time: 00:00:09
-    Info: Total CPU time (on all processors): 00:00:22
+Warning (21074): Design contains 30 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "S2"
+    Warning (15610): No output dependent on input pin "S1"
+    Warning (15610): No output dependent on input pin "S0"
+    Warning (15610): No output dependent on input pin "AnD[4]"
+    Warning (15610): No output dependent on input pin "AnD[3]"
+    Warning (15610): No output dependent on input pin "AnD[2]"
+    Warning (15610): No output dependent on input pin "AnD[1]"
+    Warning (15610): No output dependent on input pin "AnD[0]"
+    Warning (15610): No output dependent on input pin "Comp_2[4]"
+    Warning (15610): No output dependent on input pin "Comp_2[3]"
+    Warning (15610): No output dependent on input pin "Comp_2[2]"
+    Warning (15610): No output dependent on input pin "Comp_2[1]"
+    Warning (15610): No output dependent on input pin "Comp_2[0]"
+    Warning (15610): No output dependent on input pin "Soma[5]"
+    Warning (15610): No output dependent on input pin "Soma[4]"
+    Warning (15610): No output dependent on input pin "Soma[3]"
+    Warning (15610): No output dependent on input pin "Soma[2]"
+    Warning (15610): No output dependent on input pin "Soma[1]"
+    Warning (15610): No output dependent on input pin "Soma[0]"
+    Warning (15610): No output dependent on input pin "Sub[5]"
+    Warning (15610): No output dependent on input pin "Sub[4]"
+    Warning (15610): No output dependent on input pin "Sub[3]"
+    Warning (15610): No output dependent on input pin "Sub[2]"
+    Warning (15610): No output dependent on input pin "Sub[1]"
+    Warning (15610): No output dependent on input pin "Sub[0]"
+    Warning (15610): No output dependent on input pin "XoR[4]"
+    Warning (15610): No output dependent on input pin "XoR[3]"
+    Warning (15610): No output dependent on input pin "XoR[2]"
+    Warning (15610): No output dependent on input pin "XoR[1]"
+    Warning (15610): No output dependent on input pin "XoR[0]"
+Info (21057): Implemented 36 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 30 input pins
+    Info (21059): Implemented 6 output pins
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 59 warnings
+    Info: Peak virtual memory: 4728 megabytes
+    Info: Processing ended: Wed Jul 21 20:58:38 2021
+    Info: Elapsed time: 00:00:10
+    Info: Total CPU time (on all processors): 00:00:24
 
 

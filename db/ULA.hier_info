@@ -1,18 +1,39 @@
-|XOR_completo
-S[0] <= xor1.DB_MAX_OUTPUT_PORT_TYPE
-S[1] <= xor2.DB_MAX_OUTPUT_PORT_TYPE
-S[2] <= xor3.DB_MAX_OUTPUT_PORT_TYPE
-S[3] <= xor4.DB_MAX_OUTPUT_PORT_TYPE
-S[4] <= xor5.DB_MAX_OUTPUT_PORT_TYPE
-A[0] => xor1.IN0
-A[1] => xor2.IN0
-A[2] => xor3.IN0
-A[3] => xor4.IN0
-A[4] => xor5.IN0
-B[0] => xor1.IN1
-B[1] => xor2.IN1
-B[2] => xor3.IN1
-B[3] => xor4.IN1
-B[4] => xor5.IN1
+|Mux8_1_vetor
+Saida[0] <= <GND>
+Saida[1] <= <GND>
+Saida[2] <= <GND>
+Saida[3] <= <GND>
+Saida[4] <= <GND>
+Saida[5] <= <GND>
+S2 => ~NO_FANOUT~
+S1 => ~NO_FANOUT~
+S0 => ~NO_FANOUT~
+AnD[0] => ~NO_FANOUT~
+AnD[1] => ~NO_FANOUT~
+AnD[2] => ~NO_FANOUT~
+AnD[3] => ~NO_FANOUT~
+AnD[4] => ~NO_FANOUT~
+Comp_2[0] => ~NO_FANOUT~
+Comp_2[1] => ~NO_FANOUT~
+Comp_2[2] => ~NO_FANOUT~
+Comp_2[3] => ~NO_FANOUT~
+Comp_2[4] => ~NO_FANOUT~
+Soma[0] => ~NO_FANOUT~
+Soma[1] => ~NO_FANOUT~
+Soma[2] => ~NO_FANOUT~
+Soma[3] => ~NO_FANOUT~
+Soma[4] => ~NO_FANOUT~
+Soma[5] => ~NO_FANOUT~
+Sub[0] => ~NO_FANOUT~
+Sub[1] => ~NO_FANOUT~
+Sub[2] => ~NO_FANOUT~
+Sub[3] => ~NO_FANOUT~
+Sub[4] => ~NO_FANOUT~
+Sub[5] => ~NO_FANOUT~
+XoR[0] => ~NO_FANOUT~
+XoR[1] => ~NO_FANOUT~
+XoR[2] => ~NO_FANOUT~
+XoR[3] => ~NO_FANOUT~
+XoR[4] => ~NO_FANOUT~
 
 
