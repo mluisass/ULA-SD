@@ -1,30 +1,16 @@
 /*<simulation_settings>
-<<<<<<< HEAD
-<ftestbench_cmd>quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off ULA -c ULA --vector_source="E:/Documents/Estudo/SD/ULA/ULA-SD/Waveform6.vwf" --testbench_file="E:/Documents/Estudo/SD/ULA/ULA-SD/simulation/qsim/Waveform6.vwf.vt"</ftestbench_cmd>
-<ttestbench_cmd>quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off ULA -c ULA --vector_source="E:/Documents/Estudo/SD/ULA/ULA-SD/Waveform6.vwf" --testbench_file="E:/Documents/Estudo/SD/ULA/ULA-SD/simulation/qsim/Waveform6.vwf.vt"</ttestbench_cmd>
-<fnetlist_cmd>quartus_eda --write_settings_files=off --simulation --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory="E:/Documents/Estudo/SD/ULA/ULA-SD/simulation/qsim/" ULA -c ULA</fnetlist_cmd>
-<tnetlist_cmd>quartus_eda --write_settings_files=off --simulation --functional=off --flatten_buses=off --timescale=1ps --tool=modelsim_oem --format=verilog --output_directory="E:/Documents/Estudo/SD/ULA/ULA-SD/simulation/qsim/" ULA -c ULA</tnetlist_cmd>
-=======
 <ftestbench_cmd>quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off ULA -c ULA --vector_source="C:/Users/55819/Documents/ULA-SD/Waveform6.vwf" --testbench_file="C:/Users/55819/Documents/ULA-SD/simulation/qsim/Waveform6.vwf.vt"</ftestbench_cmd>
 <ttestbench_cmd>quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off ULA -c ULA --vector_source="C:/Users/55819/Documents/ULA-SD/Waveform6.vwf" --testbench_file="C:/Users/55819/Documents/ULA-SD/simulation/qsim/Waveform6.vwf.vt"</ttestbench_cmd>
 <fnetlist_cmd>quartus_eda --write_settings_files=off --simulation --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory="C:/Users/55819/Documents/ULA-SD/simulation/qsim/" ULA -c ULA</fnetlist_cmd>
 <tnetlist_cmd>quartus_eda --write_settings_files=off --simulation --functional=off --flatten_buses=off --timescale=1ps --tool=modelsim_oem --format=verilog --output_directory="C:/Users/55819/Documents/ULA-SD/simulation/qsim/" ULA -c ULA</tnetlist_cmd>
->>>>>>> 61c76b4bc868c347221f6b15a9d30183ae1b7918
 <modelsim_script>onerror {exit -code 1}
 vlib work
 vlog -work work ULA.vo
 vlog -work work Waveform6.vwf.vt
-<<<<<<< HEAD
-vsim -c -t 1ps -L cycloneive_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.somador_4_bits_vlg_vec_tst
-vcd file -direction ULA.msim.vcd
-vcd add -internal somador_4_bits_vlg_vec_tst/*
-vcd add -internal somador_4_bits_vlg_vec_tst/i1/*
-=======
 vsim -c -t 1ps -L cycloneive_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.Mux8_1_vetor_vlg_vec_tst
 vcd file -direction ULA.msim.vcd
 vcd add -internal Mux8_1_vetor_vlg_vec_tst/*
 vcd add -internal Mux8_1_vetor_vlg_vec_tst/i1/*
->>>>>>> 61c76b4bc868c347221f6b15a9d30183ae1b7918
 proc simTimestamp {} {
     echo "Simulation time: $::now ps"
     if { [string equal running [runStatus]] } {
@@ -34,26 +20,16 @@ proc simTimestamp {} {
 after 2500 simTimestamp
 run -all
 quit -f
-<<<<<<< HEAD
-=======
 
->>>>>>> 61c76b4bc868c347221f6b15a9d30183ae1b7918
 </modelsim_script>
 <modelsim_script_timing>onerror {exit -code 1}
 vlib work
 vlog -work work ULA.vo
 vlog -work work Waveform6.vwf.vt
-<<<<<<< HEAD
-vsim -novopt -c -t 1ps -L cycloneive_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.somador_4_bits_vlg_vec_tst
-vcd file -direction ULA.msim.vcd
-vcd add -internal somador_4_bits_vlg_vec_tst/*
-vcd add -internal somador_4_bits_vlg_vec_tst/i1/*
-=======
 vsim -novopt -c -t 1ps -L cycloneive_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.Mux8_1_vetor_vlg_vec_tst
 vcd file -direction ULA.msim.vcd
 vcd add -internal Mux8_1_vetor_vlg_vec_tst/*
 vcd add -internal Mux8_1_vetor_vlg_vec_tst/i1/*
->>>>>>> 61c76b4bc868c347221f6b15a9d30183ae1b7918
 proc simTimestamp {} {
     echo "Simulation time: $::now ps"
     if { [string equal running [runStatus]] } {
@@ -63,10 +39,7 @@ proc simTimestamp {} {
 after 2500 simTimestamp
 run -all
 quit -f
-<<<<<<< HEAD
-=======
 
->>>>>>> 61c76b4bc868c347221f6b15a9d30183ae1b7918
 </modelsim_script_timing>
 <hdl_lang>verilog</hdl_lang>
 </simulation_settings>*/
@@ -98,20 +71,13 @@ HEADER
 	VERSION = 1;
 	TIME_UNIT = ns;
 	DATA_OFFSET = 0.0;
-<<<<<<< HEAD
-	DATA_DURATION = 1000.0;
-=======
 	DATA_DURATION = 10.0;
->>>>>>> 61c76b4bc868c347221f6b15a9d30183ae1b7918
 	SIMULATION_TIME = 0.0;
 	GRID_PHASE = 0.0;
 	GRID_PERIOD = 10.0;
 	GRID_DUTY_CYCLE = 50;
 }
 
-<<<<<<< HEAD
-SIGNAL("A0")
-=======
 SIGNAL("AnD")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
@@ -123,87 +89,52 @@ SIGNAL("AnD")
 }
 
 SIGNAL("AnD[4]")
->>>>>>> 61c76b4bc868c347221f6b15a9d30183ae1b7918
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = INPUT;
-<<<<<<< HEAD
-	PARENT = "";
-}
-
-SIGNAL("A1")
-=======
 	PARENT = "AnD";
 }
 
 SIGNAL("AnD[3]")
->>>>>>> 61c76b4bc868c347221f6b15a9d30183ae1b7918
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = INPUT;
-<<<<<<< HEAD
-	PARENT = "";
-}
-
-SIGNAL("A2")
-=======
 	PARENT = "AnD";
 }
 
 SIGNAL("AnD[2]")
->>>>>>> 61c76b4bc868c347221f6b15a9d30183ae1b7918
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = INPUT;
-<<<<<<< HEAD
-	PARENT = "";
-}
-
-SIGNAL("A3")
-=======
 	PARENT = "AnD";
 }
 
 SIGNAL("AnD[1]")
->>>>>>> 61c76b4bc868c347221f6b15a9d30183ae1b7918
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = INPUT;
-<<<<<<< HEAD
-	PARENT = "";
-}
-
-SIGNAL("B0")
-=======
 	PARENT = "AnD";
 }
 
 SIGNAL("AnD[0]")
->>>>>>> 61c76b4bc868c347221f6b15a9d30183ae1b7918
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = INPUT;
-<<<<<<< HEAD
-	PARENT = "";
-}
-
-SIGNAL("B1")
-=======
 	PARENT = "AnD";
 }
 
@@ -218,50 +149,32 @@ SIGNAL("Comp_2")
 }
 
 SIGNAL("Comp_2[4]")
->>>>>>> 61c76b4bc868c347221f6b15a9d30183ae1b7918
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = INPUT;
-<<<<<<< HEAD
-	PARENT = "";
-}
-
-SIGNAL("B2")
-=======
 	PARENT = "Comp_2";
 }
 
 SIGNAL("Comp_2[3]")
->>>>>>> 61c76b4bc868c347221f6b15a9d30183ae1b7918
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = INPUT;
-<<<<<<< HEAD
-	PARENT = "";
-}
-
-SIGNAL("B3")
-=======
 	PARENT = "Comp_2";
 }
 
 SIGNAL("Comp_2[2]")
->>>>>>> 61c76b4bc868c347221f6b15a9d30183ae1b7918
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = INPUT;
-<<<<<<< HEAD
-	PARENT = "";
-=======
 	PARENT = "Comp_2";
 }
 
@@ -283,7 +196,6 @@ SIGNAL("Comp_2[0]")
 	LSB_INDEX = -1;
 	DIRECTION = INPUT;
 	PARENT = "Comp_2";
->>>>>>> 61c76b4bc868c347221f6b15a9d30183ae1b7918
 }
 
 SIGNAL("S0")
@@ -292,11 +204,7 @@ SIGNAL("S0")
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
-<<<<<<< HEAD
-	DIRECTION = OUTPUT;
-=======
 	DIRECTION = INPUT;
->>>>>>> 61c76b4bc868c347221f6b15a9d30183ae1b7918
 	PARENT = "";
 }
 
@@ -306,11 +214,7 @@ SIGNAL("S1")
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
-<<<<<<< HEAD
-	DIRECTION = OUTPUT;
-=======
 	DIRECTION = INPUT;
->>>>>>> 61c76b4bc868c347221f6b15a9d30183ae1b7918
 	PARENT = "";
 }
 
@@ -320,8 +224,6 @@ SIGNAL("S2")
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
-<<<<<<< HEAD
-=======
 	DIRECTION = INPUT;
 	PARENT = "";
 }
@@ -332,785 +234,27 @@ SIGNAL("Saida")
 	SIGNAL_TYPE = BUS;
 	WIDTH = 6;
 	LSB_INDEX = 0;
->>>>>>> 61c76b4bc868c347221f6b15a9d30183ae1b7918
 	DIRECTION = OUTPUT;
 	PARENT = "";
 }
 
-<<<<<<< HEAD
-SIGNAL("S3")
-=======
 SIGNAL("Saida[5]")
->>>>>>> 61c76b4bc868c347221f6b15a9d30183ae1b7918
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = OUTPUT;
-<<<<<<< HEAD
-	PARENT = "";
-}
-
-SIGNAL("S4")
-=======
 	PARENT = "Saida";
 }
 
 SIGNAL("Saida[4]")
->>>>>>> 61c76b4bc868c347221f6b15a9d30183ae1b7918
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = OUTPUT;
-<<<<<<< HEAD
-	PARENT = "";
-}
-
-TRANSITION_LIST("A0")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("A1")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 1 FOR 15.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 15.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 40.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 30.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 15.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 15.0;
-		LEVEL 0 FOR 25.0;
-		LEVEL 1 FOR 15.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 15.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 15.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 40.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 15.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 15.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 15.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 40.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 15.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 15.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 15.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 15.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 5.0;
-	}
-}
-
-TRANSITION_LIST("A2")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 1 FOR 15.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 15.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 40.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 30.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 15.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 15.0;
-		LEVEL 0 FOR 25.0;
-		LEVEL 1 FOR 15.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 15.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 15.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 40.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 15.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 15.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 15.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 40.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 15.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 15.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 15.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 15.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 5.0;
-	}
-}
-
-TRANSITION_LIST("A3")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 1 FOR 15.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 15.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 40.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 30.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 15.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 15.0;
-		LEVEL 0 FOR 25.0;
-		LEVEL 1 FOR 15.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 15.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 15.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 40.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 15.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 15.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 15.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 40.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 15.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 15.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 15.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 15.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 5.0;
-	}
-}
-
-TRANSITION_LIST("B0")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 1 FOR 15.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 15.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 40.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 30.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 15.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 15.0;
-		LEVEL 0 FOR 25.0;
-		LEVEL 1 FOR 15.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 15.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 15.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 40.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 15.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 15.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 15.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 40.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 15.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 15.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 15.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 15.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 5.0;
-	}
-}
-
-TRANSITION_LIST("B1")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 15.0;
-		LEVEL 1 FOR 15.0;
-		LEVEL 0 FOR 15.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 25.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 25.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 25.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 25.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 25.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 40.0;
-		LEVEL 1 FOR 30.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 15.0;
-		LEVEL 0 FOR 25.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 15.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 30.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 35.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 15.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 15.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 15.0;
-		LEVEL 1 FOR 15.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 15.0;
-	}
-}
-
-TRANSITION_LIST("B2")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 15.0;
-		LEVEL 1 FOR 15.0;
-		LEVEL 0 FOR 15.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 25.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 25.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 25.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 25.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 25.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 40.0;
-		LEVEL 1 FOR 30.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 15.0;
-		LEVEL 0 FOR 25.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 15.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 30.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 35.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 15.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 15.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 15.0;
-		LEVEL 1 FOR 15.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 15.0;
-	}
-}
-
-TRANSITION_LIST("B3")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 15.0;
-		LEVEL 1 FOR 15.0;
-		LEVEL 0 FOR 15.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 25.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 25.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 25.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 25.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 25.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 40.0;
-		LEVEL 1 FOR 30.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 15.0;
-		LEVEL 0 FOR 25.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 15.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 30.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 35.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 15.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 15.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 15.0;
-		LEVEL 1 FOR 15.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 5.0;
-		LEVEL 1 FOR 15.0;
-	}
-}
-
-TRANSITION_LIST("S0")
-=======
 	PARENT = "Saida";
 }
 
@@ -1616,35 +760,19 @@ TRANSITION_LIST("Sub[2]")
 }
 
 TRANSITION_LIST("Sub[1]")
->>>>>>> 61c76b4bc868c347221f6b15a9d30183ae1b7918
 {
 	NODE
 	{
 		REPEAT = 1;
-<<<<<<< HEAD
-		LEVEL X FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("S1")
-=======
 		LEVEL 0 FOR 10.0;
 	}
 }
 
 TRANSITION_LIST("Sub[0]")
->>>>>>> 61c76b4bc868c347221f6b15a9d30183ae1b7918
 {
 	NODE
 	{
 		REPEAT = 1;
-<<<<<<< HEAD
-		LEVEL X FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("S2")
-=======
 		LEVEL 0 FOR 10.0;
 	}
 }
@@ -1668,222 +796,124 @@ TRANSITION_LIST("XoR[3]")
 }
 
 TRANSITION_LIST("XoR[2]")
->>>>>>> 61c76b4bc868c347221f6b15a9d30183ae1b7918
 {
 	NODE
 	{
 		REPEAT = 1;
-<<<<<<< HEAD
-		LEVEL X FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("S3")
-=======
 		LEVEL 0 FOR 10.0;
 	}
 }
 
 TRANSITION_LIST("XoR[1]")
->>>>>>> 61c76b4bc868c347221f6b15a9d30183ae1b7918
 {
 	NODE
 	{
 		REPEAT = 1;
-<<<<<<< HEAD
-		LEVEL X FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("S4")
-=======
 		LEVEL 0 FOR 10.0;
 	}
 }
 
 TRANSITION_LIST("XoR[0]")
->>>>>>> 61c76b4bc868c347221f6b15a9d30183ae1b7918
 {
 	NODE
 	{
 		REPEAT = 1;
-<<<<<<< HEAD
-		LEVEL X FOR 1000.0;
-=======
 		LEVEL 0 FOR 10.0;
->>>>>>> 61c76b4bc868c347221f6b15a9d30183ae1b7918
 	}
 }
 
 DISPLAY_LINE
 {
-<<<<<<< HEAD
-	CHANNEL = "A0";
-=======
 	CHANNEL = "AnD";
->>>>>>> 61c76b4bc868c347221f6b15a9d30183ae1b7918
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 0;
 	TREE_LEVEL = 0;
-<<<<<<< HEAD
-=======
 	CHILDREN = 1, 2, 3, 4, 5;
->>>>>>> 61c76b4bc868c347221f6b15a9d30183ae1b7918
 }
 
 DISPLAY_LINE
 {
-<<<<<<< HEAD
-	CHANNEL = "A1";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 1;
-	TREE_LEVEL = 0;
-=======
 	CHANNEL = "AnD[4]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 1;
 	TREE_LEVEL = 1;
 	PARENT = 0;
->>>>>>> 61c76b4bc868c347221f6b15a9d30183ae1b7918
 }
 
 DISPLAY_LINE
 {
-<<<<<<< HEAD
-	CHANNEL = "A2";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 2;
-	TREE_LEVEL = 0;
-=======
 	CHANNEL = "AnD[3]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 2;
 	TREE_LEVEL = 1;
 	PARENT = 0;
->>>>>>> 61c76b4bc868c347221f6b15a9d30183ae1b7918
 }
 
 DISPLAY_LINE
 {
-<<<<<<< HEAD
-	CHANNEL = "A3";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 3;
-	TREE_LEVEL = 0;
-=======
 	CHANNEL = "AnD[2]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 3;
 	TREE_LEVEL = 1;
 	PARENT = 0;
->>>>>>> 61c76b4bc868c347221f6b15a9d30183ae1b7918
 }
 
 DISPLAY_LINE
 {
-<<<<<<< HEAD
-	CHANNEL = "B0";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 4;
-	TREE_LEVEL = 0;
-=======
 	CHANNEL = "AnD[1]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 4;
 	TREE_LEVEL = 1;
 	PARENT = 0;
->>>>>>> 61c76b4bc868c347221f6b15a9d30183ae1b7918
 }
 
 DISPLAY_LINE
 {
-<<<<<<< HEAD
-	CHANNEL = "B1";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 5;
-	TREE_LEVEL = 0;
-=======
 	CHANNEL = "AnD[0]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 5;
 	TREE_LEVEL = 1;
 	PARENT = 0;
->>>>>>> 61c76b4bc868c347221f6b15a9d30183ae1b7918
 }
 
 DISPLAY_LINE
 {
-<<<<<<< HEAD
-	CHANNEL = "B2";
-=======
 	CHANNEL = "Comp_2";
->>>>>>> 61c76b4bc868c347221f6b15a9d30183ae1b7918
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 6;
 	TREE_LEVEL = 0;
-<<<<<<< HEAD
-=======
 	CHILDREN = 7, 8, 9, 10, 11;
->>>>>>> 61c76b4bc868c347221f6b15a9d30183ae1b7918
 }
 
 DISPLAY_LINE
 {
-<<<<<<< HEAD
-	CHANNEL = "B3";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 7;
-	TREE_LEVEL = 0;
-=======
 	CHANNEL = "Comp_2[4]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 7;
 	TREE_LEVEL = 1;
 	PARENT = 6;
->>>>>>> 61c76b4bc868c347221f6b15a9d30183ae1b7918
 }
 
 DISPLAY_LINE
 {
-<<<<<<< HEAD
-	CHANNEL = "S0";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 8;
-	TREE_LEVEL = 0;
-=======
 	CHANNEL = "Comp_2[3]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 8;
 	TREE_LEVEL = 1;
 	PARENT = 6;
->>>>>>> 61c76b4bc868c347221f6b15a9d30183ae1b7918
 }
 
 DISPLAY_LINE
 {
-<<<<<<< HEAD
-	CHANNEL = "S1";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 9;
-	TREE_LEVEL = 0;
-=======
 	CHANNEL = "Comp_2[2]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
@@ -2110,7 +1140,6 @@ DISPLAY_LINE
 	TREE_INDEX = 31;
 	TREE_LEVEL = 1;
 	PARENT = 26;
->>>>>>> 61c76b4bc868c347221f6b15a9d30183ae1b7918
 }
 
 DISPLAY_LINE
@@ -2118,39 +1147,21 @@ DISPLAY_LINE
 	CHANNEL = "S2";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
-<<<<<<< HEAD
-	TREE_INDEX = 10;
-=======
 	TREE_INDEX = 32;
->>>>>>> 61c76b4bc868c347221f6b15a9d30183ae1b7918
 	TREE_LEVEL = 0;
 }
 
 DISPLAY_LINE
 {
-<<<<<<< HEAD
-	CHANNEL = "S3";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 11;
-=======
 	CHANNEL = "S1";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 33;
->>>>>>> 61c76b4bc868c347221f6b15a9d30183ae1b7918
 	TREE_LEVEL = 0;
 }
 
 DISPLAY_LINE
 {
-<<<<<<< HEAD
-	CHANNEL = "S4";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 12;
-	TREE_LEVEL = 0;
-=======
 	CHANNEL = "S0";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
@@ -2226,7 +1237,6 @@ DISPLAY_LINE
 	TREE_INDEX = 41;
 	TREE_LEVEL = 1;
 	PARENT = 35;
->>>>>>> 61c76b4bc868c347221f6b15a9d30183ae1b7918
 }
 
 TIME_BAR
