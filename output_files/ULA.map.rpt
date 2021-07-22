@@ -1,5 +1,9 @@
 Analysis & Synthesis report for ULA
+<<<<<<< HEAD
 Thu Jul 22 12:15:02 2021
+=======
+Wed Jul 21 22:06:10 2021
+>>>>>>> 61c76b4bc868c347221f6b15a9d30183ae1b7918
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -10,13 +14,7 @@ Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
   2. Analysis & Synthesis Summary
   3. Analysis & Synthesis Settings
   4. Parallel Compilation
-  5. Analysis & Synthesis Source Files Read
-  6. Analysis & Synthesis Resource Usage Summary
-  7. Analysis & Synthesis Resource Utilization by Entity
-  8. General Register Statistics
-  9. Post-Synthesis Netlist Statistics for Top Partition
- 10. Elapsed Time Per Partition
- 11. Analysis & Synthesis Messages
+  5. Analysis & Synthesis Messages
 
 
 
@@ -43,6 +41,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
+<<<<<<< HEAD
 ; Analysis & Synthesis Status        ; Successful - Thu Jul 22 12:15:02 2021       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; ULA                                         ;
@@ -57,6 +56,22 @@ https://fpgasoftware.intel.com/eula.
 ; Total memory bits                  ; 0                                           ;
 ; Embedded Multiplier 9-bit elements ; 0                                           ;
 ; Total PLLs                         ; 0                                           ;
+=======
+; Analysis & Synthesis Status        ; Failed - Wed Jul 21 22:06:10 2021           ;
+; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
+; Revision Name                      ; ULA                                         ;
+; Top-level Entity Name              ; Mux8_1_vetor                                ;
+; Family                             ; Cyclone IV E                                ;
+; Total logic elements               ; N/A until Partition Merge                   ;
+;     Total combinational functions  ; N/A until Partition Merge                   ;
+;     Dedicated logic registers      ; N/A until Partition Merge                   ;
+; Total registers                    ; N/A until Partition Merge                   ;
+; Total pins                         ; N/A until Partition Merge                   ;
+; Total virtual pins                 ; N/A until Partition Merge                   ;
+; Total memory bits                  ; N/A until Partition Merge                   ;
+; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                   ;
+; Total PLLs                         ; N/A until Partition Merge                   ;
+>>>>>>> 61c76b4bc868c347221f6b15a9d30183ae1b7918
 +------------------------------------+---------------------------------------------+
 
 
@@ -65,7 +80,11 @@ https://fpgasoftware.intel.com/eula.
 +------------------------------------------------------------------+--------------------+--------------------+
 ; Option                                                           ; Setting            ; Default Value      ;
 +------------------------------------------------------------------+--------------------+--------------------+
+<<<<<<< HEAD
 ; Top-level entity name                                            ; somador_completo   ; ULA                ;
+=======
+; Top-level entity name                                            ; Mux8_1_vetor       ; ULA                ;
+>>>>>>> 61c76b4bc868c347221f6b15a9d30183ae1b7918
 ; Family name                                                      ; Cyclone IV E       ; Cyclone V          ;
 ; Use smart compilation                                            ; Off                ; Off                ;
 ; Enable parallel Assembler and Timing Analyzer during compilation ; On                 ; On                 ;
@@ -161,6 +180,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 
 
+<<<<<<< HEAD
 +------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Source Files Read                                                                                                                                 ;
 +----------------------------------+-----------------+------------------------------------+--------------------------------------------------------------------+---------+
@@ -299,13 +319,19 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------+--------------+
 
 
+=======
+>>>>>>> 61c76b4bc868c347221f6b15a9d30183ae1b7918
 +-------------------------------+
 ; Analysis & Synthesis Messages ;
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+<<<<<<< HEAD
     Info: Processing started: Thu Jul 22 12:14:50 2021
+=======
+    Info: Processing started: Wed Jul 21 22:06:03 2021
+>>>>>>> 61c76b4bc868c347221f6b15a9d30183ae1b7918
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ULA -c ULA
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -393,6 +419,7 @@ Info (12021): Found 1 design units, including 1 entities, in source file conv_co
     Info (12023): Found entity 1: conv_completo_2_digitos
 Info (12021): Found 1 design units, including 1 entities, in source file conv_completo_1_digito.bdf
     Info (12023): Found entity 1: conv_completo_1_digito
+<<<<<<< HEAD
 Info (12021): Found 1 design units, including 1 entities, in source file subtrator_checagem.bdf
     Info (12023): Found entity 1: subtrator_checagem
 Info (12021): Found 1 design units, including 1 entities, in source file subtrator_completo.bdf
@@ -429,5 +456,15 @@ Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
     Info: Processing ended: Thu Jul 22 12:15:02 2021
     Info: Elapsed time: 00:00:12
     Info: Total CPU time (on all processors): 00:00:29
+=======
+Info (12127): Elaborating entity "Mux8_1_vetor" for the top level hierarchy
+Error (275024): Width mismatch in port "IN1" of instance "inst1" and type AND4 -- source is ""Comp_2[4..0]""
+Error (12153): Can't elaborate top-level user hierarchy
+Error: Quartus Prime Analysis & Synthesis was unsuccessful. 2 errors, 1 warning
+    Error: Peak virtual memory: 4704 megabytes
+    Error: Processing ended: Wed Jul 21 22:06:10 2021
+    Error: Elapsed time: 00:00:07
+    Error: Total CPU time (on all processors): 00:00:20
+>>>>>>> 61c76b4bc868c347221f6b15a9d30183ae1b7918
 
 

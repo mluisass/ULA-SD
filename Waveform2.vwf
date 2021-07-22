@@ -1,16 +1,30 @@
 /*<simulation_settings>
+<<<<<<< HEAD
 <ftestbench_cmd>quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off ULA -c ULA --vector_source="E:/Documents/Estudo/SD/ULA/ULA-SD/Waveform2.vwf" --testbench_file="E:/Documents/Estudo/SD/ULA/ULA-SD/simulation/qsim/Waveform2.vwf.vt"</ftestbench_cmd>
 <ttestbench_cmd>quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off ULA -c ULA --vector_source="E:/Documents/Estudo/SD/ULA/ULA-SD/Waveform2.vwf" --testbench_file="E:/Documents/Estudo/SD/ULA/ULA-SD/simulation/qsim/Waveform2.vwf.vt"</ttestbench_cmd>
 <fnetlist_cmd>quartus_eda --write_settings_files=off --simulation --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory="E:/Documents/Estudo/SD/ULA/ULA-SD/simulation/qsim/" ULA -c ULA</fnetlist_cmd>
 <tnetlist_cmd>quartus_eda --write_settings_files=off --simulation --functional=off --flatten_buses=off --timescale=1ps --tool=modelsim_oem --format=verilog --output_directory="E:/Documents/Estudo/SD/ULA/ULA-SD/simulation/qsim/" ULA -c ULA</tnetlist_cmd>
+=======
+<ftestbench_cmd>quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off ULA -c ULA --vector_source="C:/Users/55819/Documents/ULA-SD/Waveform2.vwf" --testbench_file="C:/Users/55819/Documents/ULA-SD/simulation/qsim/Waveform2.vwf.vt"</ftestbench_cmd>
+<ttestbench_cmd>quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off ULA -c ULA --vector_source="C:/Users/55819/Documents/ULA-SD/Waveform2.vwf" --testbench_file="C:/Users/55819/Documents/ULA-SD/simulation/qsim/Waveform2.vwf.vt"</ttestbench_cmd>
+<fnetlist_cmd>quartus_eda --write_settings_files=off --simulation --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory="C:/Users/55819/Documents/ULA-SD/simulation/qsim/" ULA -c ULA</fnetlist_cmd>
+<tnetlist_cmd>quartus_eda --write_settings_files=off --simulation --functional=off --flatten_buses=off --timescale=1ps --tool=modelsim_oem --format=verilog --output_directory="C:/Users/55819/Documents/ULA-SD/simulation/qsim/" ULA -c ULA</tnetlist_cmd>
+>>>>>>> 61c76b4bc868c347221f6b15a9d30183ae1b7918
 <modelsim_script>onerror {exit -code 1}
 vlib work
 vlog -work work ULA.vo
 vlog -work work Waveform2.vwf.vt
+<<<<<<< HEAD
 vsim -c -t 1ps -L cycloneive_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.somador_completo_vlg_vec_tst
 vcd file -direction ULA.msim.vcd
 vcd add -internal somador_completo_vlg_vec_tst/*
 vcd add -internal somador_completo_vlg_vec_tst/i1/*
+=======
+vsim -c -t 1ps -L cycloneive_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.igualdade_completo_vlg_vec_tst
+vcd file -direction ULA.msim.vcd
+vcd add -internal igualdade_completo_vlg_vec_tst/*
+vcd add -internal igualdade_completo_vlg_vec_tst/i1/*
+>>>>>>> 61c76b4bc868c347221f6b15a9d30183ae1b7918
 proc simTimestamp {} {
     echo "Simulation time: $::now ps"
     if { [string equal running [runStatus]] } {
@@ -25,10 +39,17 @@ quit -f
 vlib work
 vlog -work work ULA.vo
 vlog -work work Waveform2.vwf.vt
+<<<<<<< HEAD
 vsim -novopt -c -t 1ps -L cycloneive_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.somador_completo_vlg_vec_tst
 vcd file -direction ULA.msim.vcd
 vcd add -internal somador_completo_vlg_vec_tst/*
 vcd add -internal somador_completo_vlg_vec_tst/i1/*
+=======
+vsim -novopt -c -t 1ps -L cycloneive_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.igualdade_completo_vlg_vec_tst
+vcd file -direction ULA.msim.vcd
+vcd add -internal igualdade_completo_vlg_vec_tst/*
+vcd add -internal igualdade_completo_vlg_vec_tst/i1/*
+>>>>>>> 61c76b4bc868c347221f6b15a9d30183ae1b7918
 proc simTimestamp {} {
     echo "Simulation time: $::now ps"
     if { [string equal running [runStatus]] } {
@@ -76,63 +97,105 @@ HEADER
 	GRID_DUTY_CYCLE = 50;
 }
 
+<<<<<<< HEAD
 SIGNAL("I10")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
+=======
+SIGNAL("EntradasA")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = BUS;
+	WIDTH = 5;
+	LSB_INDEX = 0;
+>>>>>>> 61c76b4bc868c347221f6b15a9d30183ae1b7918
 	DIRECTION = INPUT;
 	PARENT = "";
 }
 
+<<<<<<< HEAD
 SIGNAL("I11")
+=======
+SIGNAL("EntradasA[4]")
+>>>>>>> 61c76b4bc868c347221f6b15a9d30183ae1b7918
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = INPUT;
+<<<<<<< HEAD
 	PARENT = "";
 }
 
 SIGNAL("I12")
+=======
+	PARENT = "EntradasA";
+}
+
+SIGNAL("EntradasA[3]")
+>>>>>>> 61c76b4bc868c347221f6b15a9d30183ae1b7918
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = INPUT;
+<<<<<<< HEAD
 	PARENT = "";
 }
 
 SIGNAL("I13")
+=======
+	PARENT = "EntradasA";
+}
+
+SIGNAL("EntradasA[2]")
+>>>>>>> 61c76b4bc868c347221f6b15a9d30183ae1b7918
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = INPUT;
+<<<<<<< HEAD
 	PARENT = "";
 }
 
 SIGNAL("I14")
+=======
+	PARENT = "EntradasA";
+}
+
+SIGNAL("EntradasA[1]")
+>>>>>>> 61c76b4bc868c347221f6b15a9d30183ae1b7918
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = INPUT;
+<<<<<<< HEAD
 	PARENT = "";
 }
 
 SIGNAL("I20")
+=======
+	PARENT = "EntradasA";
+}
+
+SIGNAL("EntradasA[0]")
+>>>>>>> 61c76b4bc868c347221f6b15a9d30183ae1b7918
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = INPUT;
+<<<<<<< HEAD
 	PARENT = "";
 }
 
@@ -142,37 +205,67 @@ SIGNAL("I21")
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
+=======
+	PARENT = "EntradasA";
+}
+
+SIGNAL("EntradasB")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = BUS;
+	WIDTH = 5;
+	LSB_INDEX = 0;
+>>>>>>> 61c76b4bc868c347221f6b15a9d30183ae1b7918
 	DIRECTION = INPUT;
 	PARENT = "";
 }
 
+<<<<<<< HEAD
 SIGNAL("I22")
+=======
+SIGNAL("EntradasB[4]")
+>>>>>>> 61c76b4bc868c347221f6b15a9d30183ae1b7918
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = INPUT;
+<<<<<<< HEAD
 	PARENT = "";
 }
 
 SIGNAL("I23")
+=======
+	PARENT = "EntradasB";
+}
+
+SIGNAL("EntradasB[3]")
+>>>>>>> 61c76b4bc868c347221f6b15a9d30183ae1b7918
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = INPUT;
+<<<<<<< HEAD
 	PARENT = "";
 }
 
 SIGNAL("I24")
+=======
+	PARENT = "EntradasB";
+}
+
+SIGNAL("EntradasB[2]")
+>>>>>>> 61c76b4bc868c347221f6b15a9d30183ae1b7918
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = INPUT;
+<<<<<<< HEAD
 	PARENT = "";
 }
 
@@ -217,40 +310,70 @@ SIGNAL("S[3]")
 }
 
 SIGNAL("S[2]")
+=======
+	PARENT = "EntradasB";
+}
+
+SIGNAL("EntradasB[1]")
+>>>>>>> 61c76b4bc868c347221f6b15a9d30183ae1b7918
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
+<<<<<<< HEAD
 	DIRECTION = OUTPUT;
 	PARENT = "S";
 }
 
 SIGNAL("S[1]")
+=======
+	DIRECTION = INPUT;
+	PARENT = "EntradasB";
+}
+
+SIGNAL("EntradasB[0]")
+>>>>>>> 61c76b4bc868c347221f6b15a9d30183ae1b7918
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
+<<<<<<< HEAD
 	DIRECTION = OUTPUT;
 	PARENT = "S";
 }
 
 SIGNAL("S[0]")
+=======
+	DIRECTION = INPUT;
+	PARENT = "EntradasB";
+}
+
+SIGNAL("Saida")
+>>>>>>> 61c76b4bc868c347221f6b15a9d30183ae1b7918
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = OUTPUT;
+<<<<<<< HEAD
 	PARENT = "S";
 }
 
 TRANSITION_LIST("I10")
+=======
+	PARENT = "";
+}
+
+TRANSITION_LIST("EntradasA[4]")
+>>>>>>> 61c76b4bc868c347221f6b15a9d30183ae1b7918
 {
 	NODE
 	{
 		REPEAT = 1;
+<<<<<<< HEAD
 		LEVEL 0 FOR 10.0;
 		LEVEL 1 FOR 5.0;
 		LEVEL 0 FOR 5.0;
@@ -311,10 +434,85 @@ TRANSITION_LIST("I10")
 		LEVEL 1 FOR 20.0;
 		LEVEL 0 FOR 10.0;
 		LEVEL 1 FOR 10.0;
+=======
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 30.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 5.0;
 		LEVEL 0 FOR 10.0;
 		LEVEL 1 FOR 5.0;
 		LEVEL 0 FOR 5.0;
 		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 15.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 25.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 25.0;
+		LEVEL 0 FOR 15.0;
+		LEVEL 1 FOR 15.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 15.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 15.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 15.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 25.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 15.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 45.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 5.0;
+>>>>>>> 61c76b4bc868c347221f6b15a9d30183ae1b7918
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+<<<<<<< HEAD
 		LEVEL 0 FOR 20.0;
 		LEVEL 1 FOR 20.0;
 		LEVEL 0 FOR 10.0;
@@ -359,12 +557,46 @@ TRANSITION_LIST("I10")
 }
 
 TRANSITION_LIST("I11")
+=======
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 15.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 15.0;
+		LEVEL 0 FOR 5.0;
+	}
+}
+
+TRANSITION_LIST("EntradasA[3]")
+>>>>>>> 61c76b4bc868c347221f6b15a9d30183ae1b7918
 {
 	NODE
 	{
 		REPEAT = 1;
 		LEVEL 0 FOR 10.0;
 		LEVEL 1 FOR 5.0;
+<<<<<<< HEAD
 		LEVEL 0 FOR 5.0;
 		LEVEL 1 FOR 10.0;
 		LEVEL 0 FOR 5.0;
@@ -466,15 +698,125 @@ TRANSITION_LIST("I11")
 		LEVEL 0 FOR 15.0;
 		LEVEL 1 FOR 5.0;
 		LEVEL 0 FOR 5.0;
+=======
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 25.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 25.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 15.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 15.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 15.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 15.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 15.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 15.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 15.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 15.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 15.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 15.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 5.0;
+>>>>>>> 61c76b4bc868c347221f6b15a9d30183ae1b7918
 		LEVEL 1 FOR 5.0;
 	}
 }
 
+<<<<<<< HEAD
 TRANSITION_LIST("I12")
+=======
+TRANSITION_LIST("EntradasA[2]")
+>>>>>>> 61c76b4bc868c347221f6b15a9d30183ae1b7918
 {
 	NODE
 	{
 		REPEAT = 1;
+<<<<<<< HEAD
 		LEVEL 0 FOR 15.0;
 		LEVEL 1 FOR 5.0;
 		LEVEL 0 FOR 5.0;
@@ -487,19 +829,38 @@ TRANSITION_LIST("I12")
 		LEVEL 1 FOR 5.0;
 		LEVEL 0 FOR 5.0;
 		LEVEL 1 FOR 15.0;
+=======
+		LEVEL 0 FOR 25.0;
+		LEVEL 1 FOR 15.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 70.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 10.0;
+>>>>>>> 61c76b4bc868c347221f6b15a9d30183ae1b7918
 		LEVEL 0 FOR 5.0;
 		LEVEL 1 FOR 5.0;
 		LEVEL 0 FOR 5.0;
 		LEVEL 1 FOR 5.0;
+<<<<<<< HEAD
 		LEVEL 0 FOR 10.0;
 		LEVEL 1 FOR 10.0;
 		LEVEL 0 FOR 10.0;
 		LEVEL 1 FOR 10.0;
 		LEVEL 0 FOR 5.0;
+=======
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 15.0;
+>>>>>>> 61c76b4bc868c347221f6b15a9d30183ae1b7918
 		LEVEL 1 FOR 5.0;
 		LEVEL 0 FOR 5.0;
 		LEVEL 1 FOR 5.0;
 		LEVEL 0 FOR 5.0;
+<<<<<<< HEAD
 		LEVEL 1 FOR 25.0;
 		LEVEL 0 FOR 5.0;
 		LEVEL 1 FOR 15.0;
@@ -533,10 +894,36 @@ TRANSITION_LIST("I12")
 		LEVEL 1 FOR 5.0;
 		LEVEL 0 FOR 5.0;
 		LEVEL 1 FOR 5.0;
+=======
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 25.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 10.0;
 		LEVEL 0 FOR 5.0;
 		LEVEL 1 FOR 10.0;
 		LEVEL 0 FOR 5.0;
 		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 25.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 15.0;
+		LEVEL 1 FOR 15.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 5.0;
+>>>>>>> 61c76b4bc868c347221f6b15a9d30183ae1b7918
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+<<<<<<< HEAD
 		LEVEL 0 FOR 5.0;
 		LEVEL 1 FOR 5.0;
 		LEVEL 0 FOR 5.0;
@@ -586,16 +973,76 @@ TRANSITION_LIST("I12")
 }
 
 TRANSITION_LIST("I13")
+=======
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 25.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 15.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 15.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 15.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 15.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 25.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 25.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 15.0;
+		LEVEL 1 FOR 15.0;
+		LEVEL 0 FOR 5.0;
+	}
+}
+
+TRANSITION_LIST("EntradasA[1]")
+>>>>>>> 61c76b4bc868c347221f6b15a9d30183ae1b7918
 {
 	NODE
 	{
 		REPEAT = 1;
+<<<<<<< HEAD
 		LEVEL 0 FOR 15.0;
+=======
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 25.0;
+>>>>>>> 61c76b4bc868c347221f6b15a9d30183ae1b7918
 		LEVEL 1 FOR 5.0;
 		LEVEL 0 FOR 5.0;
 		LEVEL 1 FOR 15.0;
 		LEVEL 0 FOR 10.0;
 		LEVEL 1 FOR 5.0;
+<<<<<<< HEAD
 		LEVEL 0 FOR 15.0;
 		LEVEL 1 FOR 5.0;
 		LEVEL 0 FOR 5.0;
@@ -671,12 +1118,56 @@ TRANSITION_LIST("I13")
 		LEVEL 0 FOR 10.0;
 		LEVEL 1 FOR 5.0;
 		LEVEL 0 FOR 15.0;
+=======
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 15.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 15.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 15.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 30.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 15.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 15.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 25.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 15.0;
+		LEVEL 0 FOR 15.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 5.0;
+>>>>>>> 61c76b4bc868c347221f6b15a9d30183ae1b7918
 		LEVEL 1 FOR 10.0;
 		LEVEL 0 FOR 5.0;
 		LEVEL 1 FOR 5.0;
 		LEVEL 0 FOR 15.0;
 		LEVEL 1 FOR 5.0;
 		LEVEL 0 FOR 5.0;
+<<<<<<< HEAD
 		LEVEL 1 FOR 5.0;
 		LEVEL 0 FOR 10.0;
 		LEVEL 1 FOR 10.0;
@@ -686,11 +1177,35 @@ TRANSITION_LIST("I13")
 		LEVEL 1 FOR 10.0;
 		LEVEL 0 FOR 5.0;
 		LEVEL 1 FOR 5.0;
+=======
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 25.0;
+		LEVEL 1 FOR 15.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 15.0;
+		LEVEL 0 FOR 15.0;
+		LEVEL 1 FOR 15.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 15.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 15.0;
+		LEVEL 0 FOR 25.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 20.0;
+>>>>>>> 61c76b4bc868c347221f6b15a9d30183ae1b7918
 		LEVEL 0 FOR 5.0;
 		LEVEL 1 FOR 15.0;
 		LEVEL 0 FOR 5.0;
 		LEVEL 1 FOR 5.0;
 		LEVEL 0 FOR 10.0;
+<<<<<<< HEAD
 		LEVEL 1 FOR 30.0;
 		LEVEL 0 FOR 10.0;
 		LEVEL 1 FOR 5.0;
@@ -701,10 +1216,29 @@ TRANSITION_LIST("I13")
 }
 
 TRANSITION_LIST("I14")
+=======
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 15.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 25.0;
+		LEVEL 0 FOR 15.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 10.0;
+	}
+}
+
+TRANSITION_LIST("EntradasA[0]")
+>>>>>>> 61c76b4bc868c347221f6b15a9d30183ae1b7918
 {
 	NODE
 	{
 		REPEAT = 1;
+<<<<<<< HEAD
 		LEVEL 0 FOR 5.0;
 		LEVEL 1 FOR 10.0;
 		LEVEL 0 FOR 5.0;
@@ -725,10 +1259,24 @@ TRANSITION_LIST("I14")
 		LEVEL 1 FOR 50.0;
 		LEVEL 0 FOR 5.0;
 		LEVEL 1 FOR 10.0;
+=======
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 30.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 15.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+>>>>>>> 61c76b4bc868c347221f6b15a9d30183ae1b7918
 		LEVEL 0 FOR 20.0;
 		LEVEL 1 FOR 15.0;
 		LEVEL 0 FOR 10.0;
 		LEVEL 1 FOR 10.0;
+<<<<<<< HEAD
 		LEVEL 0 FOR 10.0;
 		LEVEL 1 FOR 5.0;
 		LEVEL 0 FOR 10.0;
@@ -739,14 +1287,37 @@ TRANSITION_LIST("I14")
 		LEVEL 1 FOR 15.0;
 		LEVEL 0 FOR 10.0;
 		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+=======
 		LEVEL 0 FOR 5.0;
 		LEVEL 1 FOR 5.0;
 		LEVEL 0 FOR 5.0;
 		LEVEL 1 FOR 5.0;
 		LEVEL 0 FOR 15.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 25.0;
 		LEVEL 1 FOR 5.0;
 		LEVEL 0 FOR 10.0;
 		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 15.0;
+		LEVEL 1 FOR 15.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 15.0;
+>>>>>>> 61c76b4bc868c347221f6b15a9d30183ae1b7918
+		LEVEL 0 FOR 15.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 5.0;
+<<<<<<< HEAD
 		LEVEL 0 FOR 5.0;
 		LEVEL 1 FOR 15.0;
 		LEVEL 0 FOR 25.0;
@@ -766,6 +1337,23 @@ TRANSITION_LIST("I14")
 		LEVEL 0 FOR 10.0;
 		LEVEL 1 FOR 5.0;
 		LEVEL 0 FOR 10.0;
+=======
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 15.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 15.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 15.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 15.0;
+>>>>>>> 61c76b4bc868c347221f6b15a9d30183ae1b7918
 		LEVEL 1 FOR 5.0;
 		LEVEL 0 FOR 5.0;
 		LEVEL 1 FOR 20.0;
@@ -774,6 +1362,7 @@ TRANSITION_LIST("I14")
 		LEVEL 0 FOR 5.0;
 		LEVEL 1 FOR 5.0;
 		LEVEL 0 FOR 5.0;
+<<<<<<< HEAD
 		LEVEL 1 FOR 20.0;
 		LEVEL 0 FOR 10.0;
 		LEVEL 1 FOR 15.0;
@@ -794,10 +1383,37 @@ TRANSITION_LIST("I14")
 		LEVEL 0 FOR 5.0;
 		LEVEL 1 FOR 15.0;
 		LEVEL 0 FOR 5.0;
+=======
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 15.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 15.0;
+		LEVEL 0 FOR 25.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 25.0;
+		LEVEL 0 FOR 15.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 15.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 10.0;
+>>>>>>> 61c76b4bc868c347221f6b15a9d30183ae1b7918
 		LEVEL 1 FOR 5.0;
 		LEVEL 0 FOR 10.0;
 		LEVEL 1 FOR 5.0;
 		LEVEL 0 FOR 5.0;
+<<<<<<< HEAD
 		LEVEL 1 FOR 30.0;
 		LEVEL 0 FOR 5.0;
 		LEVEL 1 FOR 5.0;
@@ -811,10 +1427,28 @@ TRANSITION_LIST("I14")
 }
 
 TRANSITION_LIST("I20")
+=======
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 15.0;
+		LEVEL 1 FOR 15.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 5.0;
+	}
+}
+
+TRANSITION_LIST("EntradasB[4]")
+>>>>>>> 61c76b4bc868c347221f6b15a9d30183ae1b7918
 {
 	NODE
 	{
 		REPEAT = 1;
+<<<<<<< HEAD
 		LEVEL 0 FOR 5.0;
 		LEVEL 1 FOR 10.0;
 		LEVEL 0 FOR 5.0;
@@ -824,11 +1458,23 @@ TRANSITION_LIST("I20")
 		LEVEL 0 FOR 5.0;
 		LEVEL 1 FOR 5.0;
 		LEVEL 0 FOR 10.0;
+=======
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 15.0;
+>>>>>>> 61c76b4bc868c347221f6b15a9d30183ae1b7918
 		LEVEL 1 FOR 5.0;
 		LEVEL 0 FOR 5.0;
 		LEVEL 1 FOR 5.0;
 		LEVEL 0 FOR 5.0;
 		LEVEL 1 FOR 10.0;
+<<<<<<< HEAD
 		LEVEL 0 FOR 10.0;
 		LEVEL 1 FOR 10.0;
 		LEVEL 0 FOR 5.0;
@@ -837,11 +1483,16 @@ TRANSITION_LIST("I20")
 		LEVEL 1 FOR 10.0;
 		LEVEL 0 FOR 20.0;
 		LEVEL 1 FOR 15.0;
+=======
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 30.0;
+>>>>>>> 61c76b4bc868c347221f6b15a9d30183ae1b7918
 		LEVEL 0 FOR 10.0;
 		LEVEL 1 FOR 10.0;
 		LEVEL 0 FOR 10.0;
 		LEVEL 1 FOR 5.0;
 		LEVEL 0 FOR 10.0;
+<<<<<<< HEAD
 		LEVEL 1 FOR 10.0;
 		LEVEL 0 FOR 10.0;
 		LEVEL 1 FOR 15.0;
@@ -853,11 +1504,33 @@ TRANSITION_LIST("I20")
 		LEVEL 1 FOR 5.0;
 		LEVEL 0 FOR 5.0;
 		LEVEL 1 FOR 5.0;
+=======
+		LEVEL 1 FOR 15.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 15.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 10.0;
+>>>>>>> 61c76b4bc868c347221f6b15a9d30183ae1b7918
 		LEVEL 0 FOR 15.0;
 		LEVEL 1 FOR 5.0;
 		LEVEL 0 FOR 10.0;
 		LEVEL 1 FOR 5.0;
 		LEVEL 0 FOR 5.0;
+<<<<<<< HEAD
 		LEVEL 1 FOR 15.0;
 		LEVEL 0 FOR 25.0;
 		LEVEL 1 FOR 5.0;
@@ -880,10 +1553,43 @@ TRANSITION_LIST("I20")
 		LEVEL 0 FOR 5.0;
 		LEVEL 1 FOR 20.0;
 		LEVEL 0 FOR 5.0;
+=======
+		LEVEL 1 FOR 35.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 15.0;
+		LEVEL 1 FOR 25.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 15.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 15.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 15.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 30.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 15.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 15.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 15.0;
+>>>>>>> 61c76b4bc868c347221f6b15a9d30183ae1b7918
 		LEVEL 1 FOR 5.0;
 		LEVEL 0 FOR 5.0;
 		LEVEL 1 FOR 5.0;
 		LEVEL 0 FOR 5.0;
+<<<<<<< HEAD
 		LEVEL 1 FOR 20.0;
 		LEVEL 0 FOR 10.0;
 		LEVEL 1 FOR 15.0;
@@ -921,16 +1627,59 @@ TRANSITION_LIST("I20")
 }
 
 TRANSITION_LIST("I21")
+=======
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 15.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 15.0;
+		LEVEL 1 FOR 5.0;
+	}
+}
+
+TRANSITION_LIST("EntradasB[3]")
+>>>>>>> 61c76b4bc868c347221f6b15a9d30183ae1b7918
 {
 	NODE
 	{
 		REPEAT = 1;
 		LEVEL 0 FOR 5.0;
+<<<<<<< HEAD
 		LEVEL 1 FOR 10.0;
 		LEVEL 0 FOR 5.0;
 		LEVEL 1 FOR 10.0;
 		LEVEL 0 FOR 10.0;
 		LEVEL 1 FOR 20.0;
+=======
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 15.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 25.0;
+		LEVEL 0 FOR 15.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 15.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 15.0;
+		LEVEL 1 FOR 15.0;
+>>>>>>> 61c76b4bc868c347221f6b15a9d30183ae1b7918
 		LEVEL 0 FOR 5.0;
 		LEVEL 1 FOR 5.0;
 		LEVEL 0 FOR 10.0;
@@ -938,6 +1687,7 @@ TRANSITION_LIST("I21")
 		LEVEL 0 FOR 5.0;
 		LEVEL 1 FOR 5.0;
 		LEVEL 0 FOR 5.0;
+<<<<<<< HEAD
 		LEVEL 1 FOR 10.0;
 		LEVEL 0 FOR 10.0;
 		LEVEL 1 FOR 10.0;
@@ -961,10 +1711,40 @@ TRANSITION_LIST("I21")
 		LEVEL 1 FOR 10.0;
 		LEVEL 0 FOR 5.0;
 		LEVEL 1 FOR 5.0;
+=======
+		LEVEL 1 FOR 15.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 15.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 25.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 25.0;
+		LEVEL 0 FOR 15.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 15.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 15.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 10.0;
+>>>>>>> 61c76b4bc868c347221f6b15a9d30183ae1b7918
 		LEVEL 0 FOR 5.0;
 		LEVEL 1 FOR 5.0;
 		LEVEL 0 FOR 15.0;
 		LEVEL 1 FOR 5.0;
+<<<<<<< HEAD
 		LEVEL 0 FOR 10.0;
 		LEVEL 1 FOR 5.0;
 		LEVEL 0 FOR 5.0;
@@ -1019,10 +1799,51 @@ TRANSITION_LIST("I21")
 		LEVEL 1 FOR 5.0;
 		LEVEL 0 FOR 5.0;
 		LEVEL 1 FOR 30.0;
+=======
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 25.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 10.0;
 		LEVEL 0 FOR 5.0;
 		LEVEL 1 FOR 5.0;
 		LEVEL 0 FOR 5.0;
 		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 15.0;
+		LEVEL 1 FOR 25.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 10.0;
+>>>>>>> 61c76b4bc868c347221f6b15a9d30183ae1b7918
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+<<<<<<< HEAD
 		LEVEL 0 FOR 15.0;
 		LEVEL 1 FOR 5.0;
 		LEVEL 0 FOR 10.0;
@@ -1031,11 +1852,23 @@ TRANSITION_LIST("I21")
 }
 
 TRANSITION_LIST("I22")
+=======
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 15.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 10.0;
+	}
+}
+
+TRANSITION_LIST("EntradasB[2]")
+>>>>>>> 61c76b4bc868c347221f6b15a9d30183ae1b7918
 {
 	NODE
 	{
 		REPEAT = 1;
 		LEVEL 0 FOR 5.0;
+<<<<<<< HEAD
 		LEVEL 1 FOR 10.0;
 		LEVEL 0 FOR 5.0;
 		LEVEL 1 FOR 10.0;
@@ -1136,10 +1969,117 @@ TRANSITION_LIST("I22")
 		LEVEL 0 FOR 15.0;
 		LEVEL 1 FOR 5.0;
 		LEVEL 0 FOR 10.0;
+=======
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 15.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 15.0;
+		LEVEL 0 FOR 25.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 15.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 15.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 25.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 15.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 15.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 15.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 15.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 15.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 15.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 15.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 25.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 15.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 20.0;
+>>>>>>> 61c76b4bc868c347221f6b15a9d30183ae1b7918
 		LEVEL 1 FOR 10.0;
 	}
 }
 
+<<<<<<< HEAD
 TRANSITION_LIST("I23")
 {
 	NODE
@@ -1170,10 +2110,28 @@ TRANSITION_LIST("I23")
 		LEVEL 1 FOR 10.0;
 		LEVEL 0 FOR 5.0;
 		LEVEL 1 FOR 10.0;
+=======
+TRANSITION_LIST("EntradasB[1]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 25.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 25.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 15.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 25.0;
+>>>>>>> 61c76b4bc868c347221f6b15a9d30183ae1b7918
 		LEVEL 0 FOR 10.0;
 		LEVEL 1 FOR 5.0;
 		LEVEL 0 FOR 5.0;
 		LEVEL 1 FOR 5.0;
+<<<<<<< HEAD
 		LEVEL 0 FOR 10.0;
 		LEVEL 1 FOR 10.0;
 		LEVEL 0 FOR 30.0;
@@ -1185,10 +2143,16 @@ TRANSITION_LIST("I23")
 		LEVEL 0 FOR 10.0;
 		LEVEL 1 FOR 20.0;
 		LEVEL 0 FOR 10.0;
+=======
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+>>>>>>> 61c76b4bc868c347221f6b15a9d30183ae1b7918
 		LEVEL 1 FOR 5.0;
 		LEVEL 0 FOR 5.0;
 		LEVEL 1 FOR 10.0;
 		LEVEL 0 FOR 5.0;
+<<<<<<< HEAD
 		LEVEL 1 FOR 5.0;
 		LEVEL 0 FOR 5.0;
 		LEVEL 1 FOR 10.0;
@@ -1197,21 +2161,61 @@ TRANSITION_LIST("I23")
 		LEVEL 0 FOR 20.0;
 		LEVEL 1 FOR 5.0;
 		LEVEL 0 FOR 30.0;
+=======
+		LEVEL 1 FOR 15.0;
+		LEVEL 0 FOR 15.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 35.0;
+		LEVEL 0 FOR 15.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 15.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 30.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 25.0;
+		LEVEL 0 FOR 15.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 15.0;
+>>>>>>> 61c76b4bc868c347221f6b15a9d30183ae1b7918
 		LEVEL 1 FOR 5.0;
 		LEVEL 0 FOR 15.0;
 		LEVEL 1 FOR 5.0;
 		LEVEL 0 FOR 5.0;
 		LEVEL 1 FOR 5.0;
 		LEVEL 0 FOR 5.0;
+<<<<<<< HEAD
 		LEVEL 1 FOR 5.0;
 		LEVEL 0 FOR 10.0;
 		LEVEL 1 FOR 5.0;
 		LEVEL 0 FOR 15.0;
+=======
+		LEVEL 1 FOR 15.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 15.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 25.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 15.0;
+		LEVEL 0 FOR 5.0;
+>>>>>>> 61c76b4bc868c347221f6b15a9d30183ae1b7918
 		LEVEL 1 FOR 5.0;
 		LEVEL 0 FOR 5.0;
 		LEVEL 1 FOR 10.0;
 		LEVEL 0 FOR 10.0;
 		LEVEL 1 FOR 10.0;
+<<<<<<< HEAD
 		LEVEL 0 FOR 30.0;
 		LEVEL 1 FOR 5.0;
 		LEVEL 0 FOR 5.0;
@@ -1245,11 +2249,55 @@ TRANSITION_LIST("I23")
 }
 
 TRANSITION_LIST("I24")
+=======
+		LEVEL 0 FOR 15.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 15.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 15.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 5.0;
+	}
+}
+
+TRANSITION_LIST("EntradasB[0]")
+>>>>>>> 61c76b4bc868c347221f6b15a9d30183ae1b7918
 {
 	NODE
 	{
 		REPEAT = 1;
 		LEVEL 1 FOR 15.0;
+<<<<<<< HEAD
 		LEVEL 0 FOR 15.0;
 		LEVEL 1 FOR 15.0;
 		LEVEL 0 FOR 10.0;
@@ -1305,11 +2353,65 @@ TRANSITION_LIST("I24")
 		LEVEL 0 FOR 15.0;
 		LEVEL 1 FOR 5.0;
 		LEVEL 0 FOR 5.0;
+=======
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 15.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 15.0;
+		LEVEL 1 FOR 35.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 15.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 15.0;
+		LEVEL 0 FOR 15.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 25.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 25.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 25.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 15.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 15.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 15.0;
+		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 15.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 15.0;
+>>>>>>> 61c76b4bc868c347221f6b15a9d30183ae1b7918
 		LEVEL 1 FOR 5.0;
 		LEVEL 0 FOR 5.0;
 		LEVEL 1 FOR 5.0;
 		LEVEL 0 FOR 10.0;
 		LEVEL 1 FOR 5.0;
+<<<<<<< HEAD
 		LEVEL 0 FOR 15.0;
 		LEVEL 1 FOR 5.0;
 		LEVEL 0 FOR 5.0;
@@ -1394,6 +2496,47 @@ TRANSITION_LIST("S[1]")
 }
 
 TRANSITION_LIST("S[0]")
+=======
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 15.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 15.0;
+		LEVEL 0 FOR 45.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 25.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 15.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 15.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 15.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 15.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 15.0;
+		LEVEL 1 FOR 15.0;
+		LEVEL 0 FOR 10.0;
+	}
+}
+
+TRANSITION_LIST("Saida")
+>>>>>>> 61c76b4bc868c347221f6b15a9d30183ae1b7918
 {
 	NODE
 	{
@@ -1404,116 +2547,222 @@ TRANSITION_LIST("S[0]")
 
 DISPLAY_LINE
 {
+<<<<<<< HEAD
 	CHANNEL = "I10";
+=======
+	CHANNEL = "EntradasA";
+>>>>>>> 61c76b4bc868c347221f6b15a9d30183ae1b7918
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 0;
 	TREE_LEVEL = 0;
+<<<<<<< HEAD
+=======
+	CHILDREN = 1, 2, 3, 4, 5;
+>>>>>>> 61c76b4bc868c347221f6b15a9d30183ae1b7918
 }
 
 DISPLAY_LINE
 {
+<<<<<<< HEAD
 	CHANNEL = "I11";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 1;
 	TREE_LEVEL = 0;
+=======
+	CHANNEL = "EntradasA[4]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 1;
+	TREE_LEVEL = 1;
+	PARENT = 0;
+>>>>>>> 61c76b4bc868c347221f6b15a9d30183ae1b7918
 }
 
 DISPLAY_LINE
 {
+<<<<<<< HEAD
 	CHANNEL = "I12";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 2;
 	TREE_LEVEL = 0;
+=======
+	CHANNEL = "EntradasA[3]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 2;
+	TREE_LEVEL = 1;
+	PARENT = 0;
+>>>>>>> 61c76b4bc868c347221f6b15a9d30183ae1b7918
 }
 
 DISPLAY_LINE
 {
+<<<<<<< HEAD
 	CHANNEL = "I13";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 3;
 	TREE_LEVEL = 0;
+=======
+	CHANNEL = "EntradasA[2]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 3;
+	TREE_LEVEL = 1;
+	PARENT = 0;
+>>>>>>> 61c76b4bc868c347221f6b15a9d30183ae1b7918
 }
 
 DISPLAY_LINE
 {
+<<<<<<< HEAD
 	CHANNEL = "I14";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 4;
 	TREE_LEVEL = 0;
+=======
+	CHANNEL = "EntradasA[1]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 4;
+	TREE_LEVEL = 1;
+	PARENT = 0;
+>>>>>>> 61c76b4bc868c347221f6b15a9d30183ae1b7918
 }
 
 DISPLAY_LINE
 {
+<<<<<<< HEAD
 	CHANNEL = "I20";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 5;
 	TREE_LEVEL = 0;
+=======
+	CHANNEL = "EntradasA[0]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 5;
+	TREE_LEVEL = 1;
+	PARENT = 0;
+>>>>>>> 61c76b4bc868c347221f6b15a9d30183ae1b7918
 }
 
 DISPLAY_LINE
 {
+<<<<<<< HEAD
 	CHANNEL = "I21";
+=======
+	CHANNEL = "EntradasB";
+>>>>>>> 61c76b4bc868c347221f6b15a9d30183ae1b7918
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 6;
 	TREE_LEVEL = 0;
+<<<<<<< HEAD
+=======
+	CHILDREN = 7, 8, 9, 10, 11;
+>>>>>>> 61c76b4bc868c347221f6b15a9d30183ae1b7918
 }
 
 DISPLAY_LINE
 {
+<<<<<<< HEAD
 	CHANNEL = "I22";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 7;
 	TREE_LEVEL = 0;
+=======
+	CHANNEL = "EntradasB[4]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 7;
+	TREE_LEVEL = 1;
+	PARENT = 6;
+>>>>>>> 61c76b4bc868c347221f6b15a9d30183ae1b7918
 }
 
 DISPLAY_LINE
 {
+<<<<<<< HEAD
 	CHANNEL = "I23";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 8;
 	TREE_LEVEL = 0;
+=======
+	CHANNEL = "EntradasB[3]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 8;
+	TREE_LEVEL = 1;
+	PARENT = 6;
+>>>>>>> 61c76b4bc868c347221f6b15a9d30183ae1b7918
 }
 
 DISPLAY_LINE
 {
+<<<<<<< HEAD
 	CHANNEL = "I24";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 9;
 	TREE_LEVEL = 0;
+=======
+	CHANNEL = "EntradasB[2]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 9;
+	TREE_LEVEL = 1;
+	PARENT = 6;
+>>>>>>> 61c76b4bc868c347221f6b15a9d30183ae1b7918
 }
 
 DISPLAY_LINE
 {
+<<<<<<< HEAD
 	CHANNEL = "S";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 10;
 	TREE_LEVEL = 0;
 	CHILDREN = 11, 12, 13, 14, 15, 16;
+=======
+	CHANNEL = "EntradasB[1]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 10;
+	TREE_LEVEL = 1;
+	PARENT = 6;
+>>>>>>> 61c76b4bc868c347221f6b15a9d30183ae1b7918
 }
 
 DISPLAY_LINE
 {
+<<<<<<< HEAD
 	CHANNEL = "S[5]";
+=======
+	CHANNEL = "EntradasB[0]";
+>>>>>>> 61c76b4bc868c347221f6b15a9d30183ae1b7918
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 11;
 	TREE_LEVEL = 1;
+<<<<<<< HEAD
 	PARENT = 10;
+=======
+	PARENT = 6;
+>>>>>>> 61c76b4bc868c347221f6b15a9d30183ae1b7918
 }
 
 DISPLAY_LINE
 {
+<<<<<<< HEAD
 	CHANNEL = "S[4]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
@@ -1560,6 +2809,13 @@ DISPLAY_LINE
 	TREE_INDEX = 16;
 	TREE_LEVEL = 1;
 	PARENT = 10;
+=======
+	CHANNEL = "Saida";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 12;
+	TREE_LEVEL = 0;
+>>>>>>> 61c76b4bc868c347221f6b15a9d30183ae1b7918
 }
 
 TIME_BAR
