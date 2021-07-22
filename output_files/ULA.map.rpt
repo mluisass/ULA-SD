@@ -1,5 +1,5 @@
 Analysis & Synthesis report for ULA
-Wed Jul 21 22:06:10 2021
+Thu Jul 22 16:58:48 2021
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -10,7 +10,13 @@ Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
   2. Analysis & Synthesis Summary
   3. Analysis & Synthesis Settings
   4. Parallel Compilation
-  5. Analysis & Synthesis Messages
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. General Register Statistics
+  9. Post-Synthesis Netlist Statistics for Top Partition
+ 10. Elapsed Time Per Partition
+ 11. Analysis & Synthesis Messages
 
 
 
@@ -37,20 +43,20 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Failed - Wed Jul 21 22:06:10 2021           ;
+; Analysis & Synthesis Status        ; Successful - Thu Jul 22 16:58:48 2021       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; ULA                                         ;
-; Top-level Entity Name              ; Mux8_1_vetor                                ;
+; Top-level Entity Name              ; SEM_ENABLE                                  ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; N/A until Partition Merge                   ;
-;     Total combinational functions  ; N/A until Partition Merge                   ;
-;     Dedicated logic registers      ; N/A until Partition Merge                   ;
-; Total registers                    ; N/A until Partition Merge                   ;
-; Total pins                         ; N/A until Partition Merge                   ;
-; Total virtual pins                 ; N/A until Partition Merge                   ;
-; Total memory bits                  ; N/A until Partition Merge                   ;
-; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                   ;
-; Total PLLs                         ; N/A until Partition Merge                   ;
+; Total logic elements               ; 12                                          ;
+;     Total combinational functions  ; 12                                          ;
+;     Dedicated logic registers      ; 0                                           ;
+; Total registers                    ; 0                                           ;
+; Total pins                         ; 17                                          ;
+; Total virtual pins                 ; 0                                           ;
+; Total memory bits                  ; 0                                           ;
+; Embedded Multiplier 9-bit elements ; 0                                           ;
+; Total PLLs                         ; 0                                           ;
 +------------------------------------+---------------------------------------------+
 
 
@@ -59,7 +65,7 @@ https://fpgasoftware.intel.com/eula.
 +------------------------------------------------------------------+--------------------+--------------------+
 ; Option                                                           ; Setting            ; Default Value      ;
 +------------------------------------------------------------------+--------------------+--------------------+
-; Top-level entity name                                            ; Mux8_1_vetor       ; ULA                ;
+; Top-level entity name                                            ; SEM_ENABLE         ; ULA                ;
 ; Family name                                                      ; Cyclone IV E       ; Cyclone V          ;
 ; Use smart compilation                                            ; Off                ; Off                ;
 ; Enable parallel Assembler and Timing Analyzer during compilation ; On                 ; On                 ;
@@ -155,20 +161,126 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 
 
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                              ;
++----------------------------------+-----------------+------------------------------------+-----------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                    ; Library ;
++----------------------------------+-----------------+------------------------------------+-----------------------------------------------------------------+---------+
+; MaiorQue9.bdf                    ; yes             ; User Block Diagram/Schematic File  ; C:/Users/55819/Desktop/ufpe/2020.2/SD/ULA-SD/MaiorQue9.bdf      ;         ;
+; MenorQue1Bit.bdf                 ; yes             ; User Block Diagram/Schematic File  ; C:/Users/55819/Desktop/ufpe/2020.2/SD/ULA-SD/MenorQue1Bit.bdf   ;         ;
+; dec_segmento_G.bdf               ; yes             ; User Block Diagram/Schematic File  ; C:/Users/55819/Desktop/ufpe/2020.2/SD/ULA-SD/dec_segmento_G.bdf ;         ;
+; dec_segmento_F.bdf               ; yes             ; User Block Diagram/Schematic File  ; C:/Users/55819/Desktop/ufpe/2020.2/SD/ULA-SD/dec_segmento_F.bdf ;         ;
+; dec_segmento_D.bdf               ; yes             ; User Block Diagram/Schematic File  ; C:/Users/55819/Desktop/ufpe/2020.2/SD/ULA-SD/dec_segmento_D.bdf ;         ;
+; dec_segmento_A.bdf               ; yes             ; User Block Diagram/Schematic File  ; C:/Users/55819/Desktop/ufpe/2020.2/SD/ULA-SD/dec_segmento_A.bdf ;         ;
+; dec_segmento_B.bdf               ; yes             ; User Block Diagram/Schematic File  ; C:/Users/55819/Desktop/ufpe/2020.2/SD/ULA-SD/dec_segmento_B.bdf ;         ;
+; dec_segmento_C.bdf               ; yes             ; User Block Diagram/Schematic File  ; C:/Users/55819/Desktop/ufpe/2020.2/SD/ULA-SD/dec_segmento_C.bdf ;         ;
+; dec_segmento_E.bdf               ; yes             ; User Block Diagram/Schematic File  ; C:/Users/55819/Desktop/ufpe/2020.2/SD/ULA-SD/dec_segmento_E.bdf ;         ;
+; SEM_ENABLE.bdf                   ; yes             ; User Block Diagram/Schematic File  ; C:/Users/55819/Desktop/ufpe/2020.2/SD/ULA-SD/SEM_ENABLE.bdf     ;         ;
++----------------------------------+-----------------+------------------------------------+-----------------------------------------------------------------+---------+
+
+
++----------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary              ;
++---------------------------------------------+------------+
+; Resource                                    ; Usage      ;
++---------------------------------------------+------------+
+; Estimated Total logic elements              ; 12         ;
+;                                             ;            ;
+; Total combinational functions               ; 12         ;
+; Logic element usage by number of LUT inputs ;            ;
+;     -- 4 input functions                    ; 8          ;
+;     -- 3 input functions                    ; 3          ;
+;     -- <=2 input functions                  ; 1          ;
+;                                             ;            ;
+; Logic elements by mode                      ;            ;
+;     -- normal mode                          ; 12         ;
+;     -- arithmetic mode                      ; 0          ;
+;                                             ;            ;
+; Total registers                             ; 0          ;
+;     -- Dedicated logic registers            ; 0          ;
+;     -- I/O registers                        ; 0          ;
+;                                             ;            ;
+; I/O pins                                    ; 17         ;
+;                                             ;            ;
+; Embedded Multiplier 9-bit elements          ; 0          ;
+;                                             ;            ;
+; Maximum fan-out node                        ; X[0]~input ;
+; Maximum fan-out                             ; 9          ;
+; Total fan-out                               ; 67         ;
+; Average fan-out                             ; 1.46       ;
++---------------------------------------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                     ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------+----------------+--------------+
+; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                             ; Entity Name    ; Library Name ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------+----------------+--------------+
+; |SEM_ENABLE                ; 12 (9)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 17   ; 0            ; |SEM_ENABLE                                     ; SEM_ENABLE     ; work         ;
+;    |MaiorQue9:inst10|      ; 1 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SEM_ENABLE|MaiorQue9:inst10                    ; MaiorQue9      ; work         ;
+;       |MenorQue1Bit:inst4| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SEM_ENABLE|MaiorQue9:inst10|MenorQue1Bit:inst4 ; MenorQue1Bit   ; work         ;
+;    |dec_segmento_C:seg_C|  ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SEM_ENABLE|dec_segmento_C:seg_C                ; dec_segmento_C ; work         ;
+;    |dec_segmento_G:seg_G|  ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SEM_ENABLE|dec_segmento_G:seg_G                ; dec_segmento_G ; work         ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------+----------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 0     ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; boundary_port         ; 17                          ;
+; cycloneiii_lcell_comb ; 19                          ;
+;     normal            ; 19                          ;
+;         1 data inputs ; 7                           ;
+;         2 data inputs ; 1                           ;
+;         3 data inputs ; 3                           ;
+;         4 data inputs ; 8                           ;
+;                       ;                             ;
+; Max LUT depth         ; 3.00                        ;
+; Average LUT depth     ; 3.00                        ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:00     ;
++----------------+--------------+
+
+
 +-------------------------------+
 ; Analysis & Synthesis Messages ;
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Wed Jul 21 22:06:03 2021
+    Info: Processing started: Thu Jul 22 16:58:39 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ULA -c ULA
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
-Info (12021): Found 1 design units, including 1 entities, in source file menorque2.bdf
-    Info (12023): Found entity 1: MenorQue2
-Info (12021): Found 1 design units, including 1 entities, in source file maiorque9.bdf
-    Info (12023): Found entity 1: MaiorQue9
+Info (12021): Found 1 design units, including 1 entities, in source file teste_sinal.bdf
+    Info (12023): Found entity 1: teste_sinal
+Info (12021): Found 1 design units, including 1 entities, in source file somador_completo.bdf
+    Info (12023): Found entity 1: somador_completo
 Info (12021): Found 1 design units, including 1 entities, in source file complemento_2_seletor_5bits.bdf
     Info (12023): Found entity 1: complemento_2_seletor_5bits
 Info (12021): Found 1 design units, including 1 entities, in source file complemento_2_seletor.bdf
@@ -179,12 +291,18 @@ Info (12021): Found 1 design units, including 1 entities, in source file complem
     Info (12023): Found entity 1: complemento_2_checagem
 Info (12021): Found 1 design units, including 1 entities, in source file complemento_2_5bits.bdf
     Info (12023): Found entity 1: complemento_2_5bits
+Info (12021): Found 1 design units, including 1 entities, in source file mux_8x1_6bits.bdf
+    Info (12023): Found entity 1: MUX_8x1_6bits
+Info (12021): Found 1 design units, including 1 entities, in source file mux_8_para_1_bit.bdf
+    Info (12023): Found entity 1: MUX_8_para_1_bit
+Info (12021): Found 1 design units, including 1 entities, in source file menorque2.bdf
+    Info (12023): Found entity 1: MenorQue2
+Info (12021): Found 1 design units, including 1 entities, in source file maiorque9.bdf
+    Info (12023): Found entity 1: MaiorQue9
 Info (12021): Found 1 design units, including 1 entities, in source file xor_completo.bdf
     Info (12023): Found entity 1: XOR_completo
 Info (12021): Found 1 design units, including 1 entities, in source file and_completo.bdf
     Info (12023): Found entity 1: AND_completo
-Info (12021): Found 1 design units, including 1 entities, in source file mux8_1_vetor.bdf
-    Info (12023): Found entity 1: Mux8_1_vetor
 Info (12021): Found 1 design units, including 1 entities, in source file mux8_1_bit.bdf
     Info (12023): Found entity 1: Mux8_1_bit
 Info (12021): Found 1 design units, including 1 entities, in source file menorque1bit.bdf
@@ -249,13 +367,32 @@ Info (12021): Found 1 design units, including 1 entities, in source file conv_co
     Info (12023): Found entity 1: conv_completo_2_digitos
 Info (12021): Found 1 design units, including 1 entities, in source file conv_completo_1_digito.bdf
     Info (12023): Found entity 1: conv_completo_1_digito
-Info (12127): Elaborating entity "Mux8_1_vetor" for the top level hierarchy
-Error (275024): Width mismatch in port "IN1" of instance "inst1" and type AND4 -- source is ""Comp_2[4..0]""
-Error (12153): Can't elaborate top-level user hierarchy
-Error: Quartus Prime Analysis & Synthesis was unsuccessful. 2 errors, 1 warning
-    Error: Peak virtual memory: 4704 megabytes
-    Error: Processing ended: Wed Jul 21 22:06:10 2021
-    Error: Elapsed time: 00:00:07
-    Error: Total CPU time (on all processors): 00:00:20
+Info (12021): Found 1 design units, including 1 entities, in source file sem_enable.bdf
+    Info (12023): Found entity 1: SEM_ENABLE
+Info (12127): Elaborating entity "SEM_ENABLE" for the top level hierarchy
+Info (12128): Elaborating entity "dec_segmento_G" for hierarchy "dec_segmento_G:seg_G"
+Info (12128): Elaborating entity "MaiorQue9" for hierarchy "MaiorQue9:inst10"
+Info (12128): Elaborating entity "MenorQue1Bit" for hierarchy "MaiorQue9:inst10|MenorQue1Bit:inst4"
+Info (12128): Elaborating entity "dec_segmento_F" for hierarchy "dec_segmento_F:seg_F"
+Info (12128): Elaborating entity "dec_segmento_A" for hierarchy "dec_segmento_A:seg_A"
+Info (12128): Elaborating entity "dec_segmento_B" for hierarchy "dec_segmento_B:seg_B"
+Info (12128): Elaborating entity "dec_segmento_C" for hierarchy "dec_segmento_C:seg_C"
+Info (12128): Elaborating entity "dec_segmento_D" for hierarchy "dec_segmento_D:seg_D"
+Info (12128): Elaborating entity "dec_segmento_E" for hierarchy "dec_segmento_E:inst1"
+Info (286030): Timing-Driven Synthesis is running
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Warning (21074): Design contains 2 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "Y[5]"
+    Warning (15610): No output dependent on input pin "Y[0]"
+Info (21057): Implemented 29 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 10 input pins
+    Info (21059): Implemented 7 output pins
+    Info (21061): Implemented 12 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 4 warnings
+    Info: Peak virtual memory: 4745 megabytes
+    Info: Processing ended: Thu Jul 22 16:58:48 2021
+    Info: Elapsed time: 00:00:09
+    Info: Total CPU time (on all processors): 00:00:23
 
 

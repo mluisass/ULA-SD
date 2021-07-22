@@ -19,197 +19,68 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "07/21/2021 21:23:31"
+// Generated on "07/22/2021 16:12:40"
                                                                                 
-// Verilog Test Bench (with test vectors) for design :                          Mux8_1_vetor
+// Verilog Test Bench (with test vectors) for design :                          dec_segmento_G
 // 
 // Simulation tool : 3rd Party
 // 
 
 `timescale 1 ps/ 1 ps
-module Mux8_1_vetor_vlg_vec_tst();
+module dec_segmento_G_vlg_vec_tst();
 // constants                                           
 // general purpose registers
-reg [4:0] AnD;
-reg [4:0] Comp_2;
-reg S0;
-reg S1;
-reg S2;
-reg [5:0] Soma;
-reg [5:0] Sub;
-reg [4:0] XoR;
+reg X0;
+reg X1;
+reg X2;
+reg X3;
 // wires                                               
-wire [5:0] Saida;
+wire G;
 
 // assign statements (if any)                          
-Mux8_1_vetor i1 (
+dec_segmento_G i1 (
 // port map - connection between master ports and signals/registers   
-	.\AnD (AnD),
-	.Comp_2(Comp_2),
-	.S0(S0),
-	.S1(S1),
-	.S2(S2),
-	.Saida(Saida),
-	.Soma(Soma),
-	.Sub(Sub),
-	.\XoR (XoR)
+	.G(G),
+	.X0(X0),
+	.X1(X1),
+	.X2(X2),
+	.X3(X3)
 );
 initial 
 begin 
-#10000 $finish;
-end 
-// \AnD [ 4 ]
-initial
-begin
-	AnD[4] = 1'b1;
-end 
-// \AnD [ 3 ]
-initial
-begin
-	AnD[3] = 1'b0;
-end 
-// \AnD [ 2 ]
-initial
-begin
-	AnD[2] = 1'b1;
-end 
-// \AnD [ 1 ]
-initial
-begin
-	AnD[1] = 1'b0;
-end 
-// \AnD [ 0 ]
-initial
-begin
-	AnD[0] = 1'b1;
-end 
-// Comp_2[ 4 ]
-initial
-begin
-	Comp_2[4] = 1'b1;
-end 
-// Comp_2[ 3 ]
-initial
-begin
-	Comp_2[3] = 1'b0;
-end 
-// Comp_2[ 2 ]
-initial
-begin
-	Comp_2[2] = 1'b0;
-end 
-// Comp_2[ 1 ]
-initial
-begin
-	Comp_2[1] = 1'b1;
-end 
-// Comp_2[ 0 ]
-initial
-begin
-	Comp_2[0] = 1'b1;
-end 
-// Soma[ 5 ]
-initial
-begin
-	Soma[5] = 1'b0;
-end 
-// Soma[ 4 ]
-initial
-begin
-	Soma[4] = 1'b0;
-end 
-// Soma[ 3 ]
-initial
-begin
-	Soma[3] = 1'b0;
-end 
-// Soma[ 2 ]
-initial
-begin
-	Soma[2] = 1'b1;
-end 
-// Soma[ 1 ]
-initial
-begin
-	Soma[1] = 1'b0;
-end 
-// Soma[ 0 ]
-initial
-begin
-	Soma[0] = 1'b1;
-end 
-// Sub[ 5 ]
-initial
-begin
-	Sub[5] = 1'b0;
-end 
-// Sub[ 4 ]
-initial
-begin
-	Sub[4] = 1'b1;
-end 
-// Sub[ 3 ]
-initial
-begin
-	Sub[3] = 1'b0;
-end 
-// Sub[ 2 ]
-initial
-begin
-	Sub[2] = 1'b1;
-end 
-// Sub[ 1 ]
-initial
-begin
-	Sub[1] = 1'b0;
-end 
-// Sub[ 0 ]
-initial
-begin
-	Sub[0] = 1'b0;
-end 
-// \XoR [ 4 ]
-initial
-begin
-	XoR[4] = 1'b1;
-end 
-// \XoR [ 3 ]
-initial
-begin
-	XoR[3] = 1'b0;
-end 
-// \XoR [ 2 ]
-initial
-begin
-	XoR[2] = 1'b0;
-end 
-// \XoR [ 1 ]
-initial
-begin
-	XoR[1] = 1'b0;
-end 
-// \XoR [ 0 ]
-initial
-begin
-	XoR[0] = 1'b0;
+#1000000 $finish;
 end 
 
-// S2
-initial
+// X3
+always
 begin
-	S2 = 1'b0;
+	X3 = 1'b0;
+	X3 = #20000 1'b1;
+	#20000;
 end 
 
-// S1
-initial
+// X2
+always
 begin
-	S1 = 1'b0;
+	X2 = 1'b0;
+	X2 = #10000 1'b1;
+	#10000;
 end 
 
-// S0
-initial
+// X1
+always
 begin
-	S0 = 1'b0;
+	X1 = 1'b0;
+	X1 = #5000 1'b1;
+	#5000;
+end 
+
+// X0
+always
+begin
+	X0 = 1'b0;
+	X0 = #2500 1'b1;
+	#2500;
 end 
 endmodule
 

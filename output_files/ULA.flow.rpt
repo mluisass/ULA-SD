@@ -1,5 +1,5 @@
 Flow report for ULA
-Wed Jul 21 22:06:10 2021
+Thu Jul 22 17:15:04 2021
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -41,20 +41,22 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Flow Failed - Wed Jul 21 22:06:10 2021      ;
+; Flow Status                        ; Successful - Thu Jul 22 17:15:04 2021       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; ULA                                         ;
-; Top-level Entity Name              ; Mux8_1_vetor                                ;
+; Top-level Entity Name              ; SEM_ENABLE                                  ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; N/A until Partition Merge                   ;
-;     Total combinational functions  ; N/A until Partition Merge                   ;
-;     Dedicated logic registers      ; N/A until Partition Merge                   ;
-; Total registers                    ; N/A until Partition Merge                   ;
-; Total pins                         ; N/A until Partition Merge                   ;
-; Total virtual pins                 ; N/A until Partition Merge                   ;
-; Total memory bits                  ; N/A until Partition Merge                   ;
-; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                   ;
-; Total PLLs                         ; N/A until Partition Merge                   ;
+; Total logic elements               ; 12 / 6,272 ( < 1 % )                        ;
+;     Total combinational functions  ; 12 / 6,272 ( < 1 % )                        ;
+;     Dedicated logic registers      ; 0 / 6,272 ( 0 % )                           ;
+; Total registers                    ; 0                                           ;
+; Total pins                         ; 17 / 92 ( 18 % )                            ;
+; Total virtual pins                 ; 0                                           ;
+; Total memory bits                  ; 0 / 276,480 ( 0 % )                         ;
+; Embedded Multiplier 9-bit elements ; 0 / 30 ( 0 % )                              ;
+; Total PLLs                         ; 0 / 2 ( 0 % )                               ;
+; Device                             ; EP4CE6E22C6                                 ;
+; Timing Models                      ; Final                                       ;
 +------------------------------------+---------------------------------------------+
 
 
@@ -63,31 +65,31 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 07/21/2021 22:06:03 ;
+; Start date & time ; 07/22/2021 16:58:40 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; ULA                 ;
 +-------------------+---------------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------+
-; Flow Non-Default Global Settings                                                                                                                ;
-+-------------------------------------+----------------------------------------+---------------+--------------+-----------------------------------+
-; Assignment Name                     ; Value                                  ; Default Value ; Entity Name  ; Section Id                        ;
-+-------------------------------------+----------------------------------------+---------------+--------------+-----------------------------------+
-; COMPILER_SIGNATURE_ID               ; 102037068763149.162691596318124        ; --            ; --           ; --                                ;
-; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --           ; eda_board_design_timing           ;
-; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --           ; eda_board_design_boundary_scan    ;
-; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --           ; eda_board_design_signal_integrity ;
-; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --           ; eda_board_design_symbol           ;
-; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl                            ; --            ; --           ; eda_simulation                    ;
-; EDA_SIMULATION_TOOL                 ; ModelSim (Verilog)                     ; <None>        ; --           ; --                                ;
-; EDA_TIME_SCALE                      ; 1 ps                                   ; --            ; --           ; eda_simulation                    ;
-; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; Mux8_1_vetor ; Top                               ;
-; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --            ; Mux8_1_vetor ; Top                               ;
-; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --            ; Mux8_1_vetor ; Top                               ;
-; PROJECT_OUTPUT_DIRECTORY            ; output_files                           ; --            ; --           ; --                                ;
-; TOP_LEVEL_ENTITY                    ; Mux8_1_vetor                           ; ULA           ; --           ; --                                ;
-+-------------------------------------+----------------------------------------+---------------+--------------+-----------------------------------+
++------------------------------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                                               ;
++-------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
+; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id                        ;
++-------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
+; COMPILER_SIGNATURE_ID               ; 102037068763149.162698391919188        ; --            ; --          ; --                                ;
+; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --          ; eda_board_design_timing           ;
+; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --          ; eda_board_design_boundary_scan    ;
+; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --          ; eda_board_design_signal_integrity ;
+; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --          ; eda_board_design_symbol           ;
+; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl                            ; --            ; --          ; eda_simulation                    ;
+; EDA_SIMULATION_TOOL                 ; ModelSim (Verilog)                     ; <None>        ; --          ; --                                ;
+; EDA_TIME_SCALE                      ; 1 ps                                   ; --            ; --          ; eda_simulation                    ;
+; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; SEM_ENABLE  ; Top                               ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --            ; SEM_ENABLE  ; Top                               ;
+; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --            ; SEM_ENABLE  ; Top                               ;
+; PROJECT_OUTPUT_DIRECTORY            ; output_files                           ; --            ; --          ; --                                ;
+; TOP_LEVEL_ENTITY                    ; SEM_ENABLE                             ; ULA           ; --          ; --                                ;
++-------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
 
 
 +--------------------------------------------------------------------------------------------------------------------------+
@@ -95,8 +97,22 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:07     ; 1.0                     ; 4704 MB             ; 00:00:20                           ;
-; Total                ; 00:00:07     ; --                      ; --                  ; 00:00:20                           ;
+; Analysis & Synthesis ; 00:00:09     ; 1.0                     ; 4745 MB             ; 00:00:23                           ;
+; Fitter               ; 00:00:03     ; 1.0                     ; 5485 MB             ; 00:00:04                           ;
+; Assembler            ; 00:00:00     ; 1.0                     ; 4676 MB             ; 00:00:01                           ;
+; Timing Analyzer      ; 00:00:02     ; 1.0                     ; 4769 MB             ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:00     ; 1.0                     ; 4636 MB             ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:00     ; 1.0                     ; 4625 MB             ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:00     ; 1.0                     ; 4633 MB             ; 00:00:00                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4625 MB             ; 00:00:00                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4633 MB             ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4626 MB             ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4633 MB             ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4625 MB             ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4633 MB             ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4625 MB             ; 00:00:00                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4633 MB             ; 00:00:01                           ;
+; Total                ; 00:00:22     ; --                      ; --                  ; 00:00:37                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -106,6 +122,20 @@ https://fpgasoftware.intel.com/eula.
 ; Module Name          ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
 +----------------------+------------------+------------+------------+----------------+
 ; Analysis & Synthesis ; LAPTOP-ALTFRF6R  ; Windows 10 ; 10.0       ; x86_64         ;
+; Fitter               ; LAPTOP-ALTFRF6R  ; Windows 10 ; 10.0       ; x86_64         ;
+; Assembler            ; LAPTOP-ALTFRF6R  ; Windows 10 ; 10.0       ; x86_64         ;
+; Timing Analyzer      ; LAPTOP-ALTFRF6R  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; LAPTOP-ALTFRF6R  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; LAPTOP-ALTFRF6R  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; LAPTOP-ALTFRF6R  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; LAPTOP-ALTFRF6R  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; LAPTOP-ALTFRF6R  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; LAPTOP-ALTFRF6R  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; LAPTOP-ALTFRF6R  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; LAPTOP-ALTFRF6R  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; LAPTOP-ALTFRF6R  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; LAPTOP-ALTFRF6R  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; LAPTOP-ALTFRF6R  ; Windows 10 ; 10.0       ; x86_64         ;
 +----------------------+------------------+------------+------------+----------------+
 
 
@@ -113,6 +143,20 @@ https://fpgasoftware.intel.com/eula.
 ; Flow Log ;
 ------------
 quartus_map --read_settings_files=on --write_settings_files=off ULA -c ULA
+quartus_fit --read_settings_files=off --write_settings_files=off ULA -c ULA
+quartus_asm --read_settings_files=off --write_settings_files=off ULA -c ULA
+quartus_sta ULA -c ULA
+quartus_eda --read_settings_files=off --write_settings_files=off ULA -c ULA
+quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off ULA -c ULA --vector_source=C:/Users/55819/Desktop/ufpe/2020.2/SD/ULA-SD/Waveform9.vwf --testbench_file=C:/Users/55819/Desktop/ufpe/2020.2/SD/ULA-SD/simulation/qsim/Waveform9.vwf.vt
+quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=C:/Users/55819/Desktop/ufpe/2020.2/SD/ULA-SD/simulation/qsim/ ULA -c ULA
+quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off ULA -c ULA --vector_source=C:/Users/55819/Desktop/ufpe/2020.2/SD/ULA-SD/Waveform9.vwf --testbench_file=C:/Users/55819/Desktop/ufpe/2020.2/SD/ULA-SD/simulation/qsim/Waveform9.vwf.vt
+quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=C:/Users/55819/Desktop/ufpe/2020.2/SD/ULA-SD/simulation/qsim/ ULA -c ULA
+quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off ULA -c ULA --vector_source=C:/Users/55819/Desktop/ufpe/2020.2/SD/ULA-SD/Waveform9.vwf --testbench_file=C:/Users/55819/Desktop/ufpe/2020.2/SD/ULA-SD/simulation/qsim/Waveform9.vwf.vt
+quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=C:/Users/55819/Desktop/ufpe/2020.2/SD/ULA-SD/simulation/qsim/ ULA -c ULA
+quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off ULA -c ULA --vector_source=C:/Users/55819/Desktop/ufpe/2020.2/SD/ULA-SD/Waveform9.vwf --testbench_file=C:/Users/55819/Desktop/ufpe/2020.2/SD/ULA-SD/simulation/qsim/Waveform9.vwf.vt
+quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=C:/Users/55819/Desktop/ufpe/2020.2/SD/ULA-SD/simulation/qsim/ ULA -c ULA
+quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off ULA -c ULA --vector_source=C:/Users/55819/Desktop/ufpe/2020.2/SD/ULA-SD/Waveform9.vwf --testbench_file=C:/Users/55819/Desktop/ufpe/2020.2/SD/ULA-SD/simulation/qsim/Waveform9.vwf.vt
+quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=C:/Users/55819/Desktop/ufpe/2020.2/SD/ULA-SD/simulation/qsim/ ULA -c ULA
 
 
 
