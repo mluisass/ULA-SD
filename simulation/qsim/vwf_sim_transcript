@@ -1,21 +1,13 @@
 Determining the location of the ModelSim executable...
 
-<<<<<<< HEAD
-Using: c:/intelfpga_lite/20.1/modelsim_ase/win32aloem/
-=======
 Using: C:\intelFPGA_lite\20.1\modelsim_ase\win32aloem
->>>>>>> 61c76b4bc868c347221f6b15a9d30183ae1b7918
 
 To specify a ModelSim executable directory, select: Tools -> Options -> EDA Tool Options
 Note: if both ModelSim-Altera and ModelSim executables are available, ModelSim-Altera will be used.
 
 **** Generating the ModelSim Testbench ****
 
-<<<<<<< HEAD
-quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off ULA -c ULA --vector_source="E:/Documents/Estudo/SD/ULA/ULA-SD/Waveform20.vwf" --testbench_file="E:/Documents/Estudo/SD/ULA/ULA-SD/simulation/qsim/Waveform20.vwf.vt"
-=======
 quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off ULA -c ULA --vector_source="C:/Users/55819/Documents/ULA-SD/Waveform6.vwf" --testbench_file="C:/Users/55819/Documents/ULA-SD/simulation/qsim/Waveform6.vwf.vt"
->>>>>>> 61c76b4bc868c347221f6b15a9d30183ae1b7918
 
 Info: *******************************************************************
 Info: Running Quartus Prime EDA Netlist Writer
@@ -34,13 +26,8 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details, at
     Info: https://fpgasoftware.intel.com/eula.
-<<<<<<< HEAD
-    Info: Processing started: Thu Jul 22 12:15:57 2021
-Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off ULA -c ULA --vector_source=E:/Documents/Estudo/SD/ULA/ULA-SD/Waveform20.vwf --testbench_file=E:/Documents/Estudo/SD/ULA/ULA-SD/simulation/qsim/Waveform20.vwf.vt
-=======
     Info: Processing started: Wed Jul 21 21:23:31 2021
 Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off ULA -c ULA --vector_source=C:/Users/55819/Documents/ULA-SD/Waveform6.vwf --testbench_file=C:/Users/55819/Documents/ULA-SD/simulation/qsim/Waveform6.vwf.vt
->>>>>>> 61c76b4bc868c347221f6b15a9d30183ae1b7918
 Info (119004): Automatically selected device EP4CE6E22C6 for design ULA
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 
@@ -50,11 +37,7 @@ Completed successfully.
 
 **** Generating the functional simulation netlist ****
 
-<<<<<<< HEAD
-quartus_eda --write_settings_files=off --simulation --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory="E:/Documents/Estudo/SD/ULA/ULA-SD/simulation/qsim/" ULA -c ULA
-=======
 quartus_eda --write_settings_files=off --simulation --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory="C:/Users/55819/Documents/ULA-SD/simulation/qsim/" ULA -c ULA
->>>>>>> 61c76b4bc868c347221f6b15a9d30183ae1b7918
 
 Info: *******************************************************************
 Info: Running Quartus Prime EDA Netlist Writer
@@ -73,16 +56,6 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details, at
     Info: https://fpgasoftware.intel.com/eula.
-<<<<<<< HEAD
-    Info: Processing started: Thu Jul 22 12:15:58 2021
-Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=E:/Documents/Estudo/SD/ULA/ULA-SD/simulation/qsim/ ULA -c ULA
-Info (119004): Automatically selected device EP4CE6E22C6 for design ULA
-Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (204019): Generated file ULA.vo in folder "E:/Documents/Estudo/SD/ULA/ULA-SD/simulation/qsim//" for EDA simulation tool
-Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4641 megabytes
-    Info: Processing ended: Thu Jul 22 12:15:59 2021
-=======
     Info: Processing started: Wed Jul 21 21:23:32 2021
 Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=C:/Users/55819/Documents/ULA-SD/simulation/qsim/ ULA -c ULA
 Info (119004): Automatically selected device EP4CE6E22C6 for design ULA
@@ -91,7 +64,6 @@ Info (204019): Generated file ULA.vo in folder "C:/Users/55819/Documents/ULA-SD/
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
     Info: Peak virtual memory: 4641 megabytes
     Info: Processing ended: Wed Jul 21 21:23:33 2021
->>>>>>> 61c76b4bc868c347221f6b15a9d30183ae1b7918
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 
@@ -99,63 +71,18 @@ Completed successfully.
 
 **** Generating the ModelSim .do script ****
 
-<<<<<<< HEAD
-E:/Documents/Estudo/SD/ULA/ULA-SD/simulation/qsim/ULA.do generated.
-=======
 C:/Users/55819/Documents/ULA-SD/simulation/qsim/ULA.do generated.
->>>>>>> 61c76b4bc868c347221f6b15a9d30183ae1b7918
 
 Completed successfully. 
 
 **** Running the ModelSim simulation ****
 
-<<<<<<< HEAD
-c:/intelfpga_lite/20.1/modelsim_ase/win32aloem//vsim -c -do ULA.do
-=======
 C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/vsim -c -do ULA.do
->>>>>>> 61c76b4bc868c347221f6b15a9d30183ae1b7918
 
 Reading pref.tcl
 
 # 2020.1
 
-<<<<<<< HEAD
-# do ULA.do
-
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 12:16:00 on Jul 22,2021
-# vlog -work work ULA.vo 
-
-# -- Compiling module somador_completo
-# 
-# Top level modules:
-# 	somador_completo
-# End time: 12:16:00 on Jul 22,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 12:16:00 on Jul 22,2021
-# vlog -work work Waveform20.vwf.vt 
-# -- Compiling module somador_completo_vlg_vec_tst
-
-# 
-# Top level modules:
-# 	somador_completo_vlg_vec_tst
-# End time: 12:16:00 on Jul 22,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-
-# vsim -c -t 1ps -L cycloneive_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.somador_completo_vlg_vec_tst 
-# Start time: 12:16:00 on Jul 22,2021
-# Loading work.somador_completo_vlg_vec_tst
-# Loading work.somador_completo
-# Loading cycloneive_ver.cycloneive_io_obuf
-# Loading cycloneive_ver.cycloneive_io_ibuf
-# Loading cycloneive_ver.cycloneive_lcell_comb
-# after#25
-# ** Note: $finish    : Waveform20.vwf.vt(49)
-#    Time: 1 us  Iteration: 0  Instance: /somador_completo_vlg_vec_tst
-# End time: 12:16:01 on Jul 22,2021, Elapsed time: 0:00:01
-=======
 
 # do ULA.do
 # ** Warning: (vlib-34) Library already exists at "work".
@@ -190,22 +117,12 @@ Reading pref.tcl
 # ** Note: $finish    : Waveform6.vwf.vt(59)
 #    Time: 10 ns  Iteration: 0  Instance: /Mux8_1_vetor_vlg_vec_tst
 # End time: 21:23:34 on Jul 21,2021, Elapsed time: 0:00:00
->>>>>>> 61c76b4bc868c347221f6b15a9d30183ae1b7918
 # Errors: 0, Warnings: 0
 
 Completed successfully. 
 
 **** Converting ModelSim VCD to vector waveform ****
 
-<<<<<<< HEAD
-Reading E:/Documents/Estudo/SD/ULA/ULA-SD/Waveform20.vwf...
-
-Reading E:/Documents/Estudo/SD/ULA/ULA-SD/simulation/qsim/ULA.msim.vcd...
-
-Processing channel transitions... 
-
-Writing the resulting VWF to E:/Documents/Estudo/SD/ULA/ULA-SD/simulation/qsim/ULA_20210722121601.sim.vwf
-=======
 Reading C:/Users/55819/Documents/ULA-SD/Waveform6.vwf...
 
 Reading C:/Users/55819/Documents/ULA-SD/simulation/qsim/ULA.msim.vcd...
@@ -213,7 +130,6 @@ Reading C:/Users/55819/Documents/ULA-SD/simulation/qsim/ULA.msim.vcd...
 Processing channel transitions... 
 
 Writing the resulting VWF to C:/Users/55819/Documents/ULA-SD/simulation/qsim/ULA_20210721212335.sim.vwf
->>>>>>> 61c76b4bc868c347221f6b15a9d30183ae1b7918
 
 Finished VCD to VWF conversion.
 

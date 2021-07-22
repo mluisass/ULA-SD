@@ -1,10 +1,6 @@
 <sld_project_info>
   <project>
-<<<<<<< HEAD
-    <hash md5_digest_80b="24fcd0135d7a8ca9d97f"/>
-=======
     <hash md5_digest_80b="dcc1599e399e47362b3d"/>
->>>>>>> 61c76b4bc868c347221f6b15a9d30183ae1b7918
   </project>
   <file_info>
     <file device="EP4CE6E22C6" path="ULA.sof" usercode="0xFFFFFFFF"/>

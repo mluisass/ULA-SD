@@ -4,93 +4,6 @@
 			"name" : "Top",
 			"pins" : [
 				{
-<<<<<<< HEAD
-					"name" : "S[5]",
-					"strict" : false
-				},
-				{
-					"name" : "S[4]",
-					"strict" : false
-				},
-				{
-					"name" : "S[3]",
-					"strict" : false
-				},
-				{
-					"name" : "S[2]",
-					"strict" : false
-				},
-				{
-					"name" : "S[1]",
-					"strict" : false
-				},
-				{
-					"name" : "S[0]",
-					"strict" : false
-				},
-				{
-					"name" : "saida_antes[5]",
-					"strict" : false
-				},
-				{
-					"name" : "saida_antes[4]",
-					"strict" : false
-				},
-				{
-					"name" : "saida_antes[3]",
-					"strict" : false
-				},
-				{
-					"name" : "saida_antes[2]",
-					"strict" : false
-				},
-				{
-					"name" : "saida_antes[1]",
-					"strict" : false
-				},
-				{
-					"name" : "saida_antes[0]",
-					"strict" : false
-				},
-				{
-					"name" : "E1[4]",
-					"strict" : false
-				},
-				{
-					"name" : "E2[4]",
-					"strict" : false
-				},
-				{
-					"name" : "E2[3]",
-					"strict" : false
-				},
-				{
-					"name" : "E1[3]",
-					"strict" : false
-				},
-				{
-					"name" : "E2[1]",
-					"strict" : false
-				},
-				{
-					"name" : "E2[0]",
-					"strict" : false
-				},
-				{
-					"name" : "E1[0]",
-					"strict" : false
-				},
-				{
-					"name" : "E1[1]",
-					"strict" : false
-				},
-				{
-					"name" : "E2[2]",
-					"strict" : false
-				},
-				{
-					"name" : "E1[2]",
-=======
 					"name" : "Saida[5]",
 					"strict" : false
 				},
@@ -244,7 +157,6 @@
 				},
 				{
 					"name" : "Sub[0]",
->>>>>>> 61c76b4bc868c347221f6b15a9d30183ae1b7918
 					"strict" : false
 				}
 			]
