@@ -2,7 +2,164 @@
 	"partitions" : [
 		{
 			"name" : "Top",
-			"pins" : []
+			"pins" : [
+				{
+					"name" : "Saida[5]",
+					"strict" : false
+				},
+				{
+					"name" : "Saida[4]",
+					"strict" : false
+				},
+				{
+					"name" : "Saida[3]",
+					"strict" : false
+				},
+				{
+					"name" : "Saida[2]",
+					"strict" : false
+				},
+				{
+					"name" : "Saida[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Saida[0]",
+					"strict" : false
+				},
+				{
+					"name" : "S1",
+					"strict" : false
+				},
+				{
+					"name" : "S2",
+					"strict" : false
+				},
+				{
+					"name" : "XoR[5]",
+					"strict" : false
+				},
+				{
+					"name" : "AnD[5]",
+					"strict" : false
+				},
+				{
+					"name" : "S0",
+					"strict" : false
+				},
+				{
+					"name" : "Comp_2[5]",
+					"strict" : false
+				},
+				{
+					"name" : "Soma[5]",
+					"strict" : false
+				},
+				{
+					"name" : "Sub[5]",
+					"strict" : false
+				},
+				{
+					"name" : "XoR[4]",
+					"strict" : false
+				},
+				{
+					"name" : "AnD[4]",
+					"strict" : false
+				},
+				{
+					"name" : "Comp_2[4]",
+					"strict" : false
+				},
+				{
+					"name" : "Soma[4]",
+					"strict" : false
+				},
+				{
+					"name" : "Sub[4]",
+					"strict" : false
+				},
+				{
+					"name" : "XoR[3]",
+					"strict" : false
+				},
+				{
+					"name" : "AnD[3]",
+					"strict" : false
+				},
+				{
+					"name" : "Comp_2[3]",
+					"strict" : false
+				},
+				{
+					"name" : "Soma[3]",
+					"strict" : false
+				},
+				{
+					"name" : "Sub[3]",
+					"strict" : false
+				},
+				{
+					"name" : "XoR[2]",
+					"strict" : false
+				},
+				{
+					"name" : "AnD[2]",
+					"strict" : false
+				},
+				{
+					"name" : "Comp_2[2]",
+					"strict" : false
+				},
+				{
+					"name" : "Soma[2]",
+					"strict" : false
+				},
+				{
+					"name" : "Sub[2]",
+					"strict" : false
+				},
+				{
+					"name" : "XoR[1]",
+					"strict" : false
+				},
+				{
+					"name" : "AnD[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Comp_2[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Soma[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Sub[1]",
+					"strict" : false
+				},
+				{
+					"name" : "XoR[0]",
+					"strict" : false
+				},
+				{
+					"name" : "AnD[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Comp_2[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Soma[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Sub[0]",
+					"strict" : false
+				}
+			]
 		}
 	]
 }
