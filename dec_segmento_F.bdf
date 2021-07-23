@@ -72,6 +72,23 @@ https://fpgasoftware.intel.com/eula.
 	(text "VCC" (rect 7 20 17 40)(font "Arial" (font_size 6))(vertical))
 )
 (pin
+	(input)
+	(rect 576 272 592 442)
+	(text "INPUT" (rect 0 15 10 43)(font "Arial" (font_size 6))(vertical))
+	(text "X3" (rect 0 152 17 164)(font "Intel Clear" )(vertical))
+	(pt 8 0)
+	(drawing
+		(line (pt 12 84)(pt 12 59))
+		(line (pt 4 84)(pt 4 59))
+		(line (pt 8 55)(pt 8 0))
+		(line (pt 12 84)(pt 4 84))
+		(line (pt 4 59)(pt 8 55))
+		(line (pt 12 59)(pt 8 55))
+	)
+	(rotate90)
+	(text "VCC" (rect 7 20 17 40)(font "Arial" (font_size 6))(vertical))
+)
+(pin
 	(output)
 	(rect 776 96 952 112)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))

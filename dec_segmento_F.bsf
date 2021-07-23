@@ -21,9 +21,9 @@ https://fpgasoftware.intel.com/eula.
 */
 (header "symbol" (version "1.2"))
 (symbol
-	(rect 16 16 112 112)
+	(rect 16 16 112 144)
 	(text "dec_segmento_F" (rect 5 0 105 19)(font "Intel Clear" (font_size 8)))
-	(text "inst" (rect 8 75 24 92)(font "Intel Clear" ))
+	(text "inst" (rect 8 107 24 124)(font "Intel Clear" ))
 	(port
 		(pt 0 32)
 		(input)
@@ -46,6 +46,13 @@ https://fpgasoftware.intel.com/eula.
 		(line (pt 0 64)(pt 16 64))
 	)
 	(port
+		(pt 0 80)
+		(input)
+		(text "X3" (rect 0 0 16 19)(font "Intel Clear" (font_size 8)))
+		(text "X3" (rect 21 75 37 94)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 80)(pt 16 80))
+	)
+	(port
 		(pt 96 32)
 		(output)
 		(text "F" (rect 0 0 7 19)(font "Intel Clear" (font_size 8)))
@@ -53,6 +60,6 @@ https://fpgasoftware.intel.com/eula.
 		(line (pt 96 32)(pt 80 32))
 	)
 	(drawing
-		(rectangle (rect 16 16 80 80))
+		(rectangle (rect 16 16 80 112))
 	)
 )
