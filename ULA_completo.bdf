@@ -75,7 +75,7 @@ https://fpgasoftware.intel.com/eula.
 	(output)
 	(rect 1256 176 1272 352)
 	(text "OUTPUT" (rect 0 137 10 175)(font "Arial" (font_size 6))(vertical))
-	(text "LED_status" (rect 4 5 16 63)(font "Arial" )(vertical))
+	(text "LED_status" (rect 4 5 16 62)(font "Arial" )(vertical))
 	(pt 8 176)
 	(drawing
 		(line (pt 8 176)(pt 8 124))
@@ -92,7 +92,7 @@ https://fpgasoftware.intel.com/eula.
 	(output)
 	(rect 1280 176 1296 352)
 	(text "OUTPUT" (rect 0 137 10 175)(font "Arial" (font_size 6))(vertical))
-	(text "LED_sinal" (rect 4 5 21 53)(font "Intel Clear" )(vertical))
+	(text "LED_sinal" (rect 4 5 21 52)(font "Intel Clear" )(vertical))
 	(pt 8 176)
 	(drawing
 		(line (pt 8 176)(pt 8 124))
@@ -588,36 +588,6 @@ https://fpgasoftware.intel.com/eula.
 	(flipy_rotate90)
 )
 (symbol
-	(rect 824 624 920 760)
-	(text "subtrator_completo" (rect 0 5 19 121)(font "Intel Clear" (font_size 8))(vertical))
-	(text "subtracao" (rect 75 8 92 54)(font "Intel Clear" )(vertical))
-	(port
-		(pt 32 0)
-		(input)
-		(text "E1[4..0]" (rect 0 0 46 19)(font "Intel Clear" (font_size 8)))
-		(text "E1[4..0]" (rect 27 21 46 67)(font "Intel Clear" (font_size 8))(vertical))
-		(line (pt 32 0)(pt 32 16)(line_width 3))
-	)
-	(port
-		(pt 48 0)
-		(input)
-		(text "E2[4..0]" (rect 0 0 46 19)(font "Intel Clear" (font_size 8)))
-		(text "E2[4..0]" (rect 43 21 62 67)(font "Intel Clear" (font_size 8))(vertical))
-		(line (pt 48 0)(pt 48 16)(line_width 3))
-	)
-	(port
-		(pt 32 136)
-		(output)
-		(text "S[5..0]" (rect 0 0 38 19)(font "Intel Clear" (font_size 8)))
-		(text "S[5..0]" (rect 27 77 46 115)(font "Intel Clear" (font_size 8))(vertical))
-		(line (pt 32 136)(pt 32 120)(line_width 3))
-	)
-	(drawing
-		(rectangle (rect 16 16 80 120))
-	)
-	(flipy_rotate90)
-)
-(symbol
 	(rect 456 624 552 752)
 	(text "XOR_completo" (rect 0 5 19 93)(font "Intel Clear" (font_size 8))(vertical))
 	(text "XOR_1" (rect 75 8 92 42)(font "Intel Clear" )(vertical))
@@ -721,6 +691,36 @@ https://fpgasoftware.intel.com/eula.
 		(rectangle (rect 16 16 80 80))
 	)
 )
+(symbol
+	(rect 808 624 904 760)
+	(text "subtrator_completo" (rect 77 5 96 121)(font "Intel Clear" (font_size 8))(vertical))
+	(text "subtracao" (rect 5 7 22 53)(font "Intel Clear" )(vertical))
+	(port
+		(pt 64 0)
+		(input)
+		(text "E1[4..0]" (rect 0 0 46 19)(font "Intel Clear" (font_size 8)))
+		(text "E1[4..0]" (rect 50 21 69 67)(font "Intel Clear" (font_size 8))(vertical))
+		(line (pt 64 0)(pt 64 16)(line_width 3))
+	)
+	(port
+		(pt 48 0)
+		(input)
+		(text "E2[4..0]" (rect 0 0 46 19)(font "Intel Clear" (font_size 8)))
+		(text "E2[4..0]" (rect 34 21 53 67)(font "Intel Clear" (font_size 8))(vertical))
+		(line (pt 48 0)(pt 48 16)(line_width 3))
+	)
+	(port
+		(pt 64 136)
+		(output)
+		(text "S[5..0]" (rect 0 0 38 19)(font "Intel Clear" (font_size 8)))
+		(text "S[5..0]" (rect 50 77 69 115)(font "Intel Clear" (font_size 8))(vertical))
+		(line (pt 64 136)(pt 64 120)(line_width 3))
+	)
+	(drawing
+		(rectangle (rect 16 16 80 120))
+	)
+	(rotate270)
+)
 (connector
 	(pt 872 624)
 	(pt 872 568)
@@ -792,11 +792,6 @@ https://fpgasoftware.intel.com/eula.
 	(bus)
 )
 (connector
-	(pt 856 760)
-	(pt 856 832)
-	(bus)
-)
-(connector
 	(pt 488 752)
 	(pt 488 880)
 	(bus)
@@ -809,11 +804,6 @@ https://fpgasoftware.intel.com/eula.
 (connector
 	(pt 968 816)
 	(pt 1088 816)
-	(bus)
-)
-(connector
-	(pt 856 832)
-	(pt 1088 832)
 	(bus)
 )
 (connector
@@ -1137,6 +1127,16 @@ https://fpgasoftware.intel.com/eula.
 (connector
 	(pt 1536 816)
 	(pt 1720 816)
+	(bus)
+)
+(connector
+	(pt 872 832)
+	(pt 872 760)
+	(bus)
+)
+(connector
+	(pt 1088 832)
+	(pt 872 832)
 	(bus)
 )
 (junction (pt 856 584))
