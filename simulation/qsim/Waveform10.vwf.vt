@@ -19,29 +19,39 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "07/22/2021 17:59:58"
+// Generated on "07/23/2021 10:58:24"
                                                                                 
-// Verilog Test Bench (with test vectors) for design :                          conversor_completo
+// Verilog Test Bench (with test vectors) for design :                          conv_2_digitos
 // 
 // Simulation tool : 3rd Party
 // 
 
 `timescale 1 ps/ 1 ps
-module conversor_completo_vlg_vec_tst();
+module conv_2_digitos_vlg_vec_tst();
 // constants                                           
 // general purpose registers
-reg E;
 reg [5:0] F;
 // wires                                               
-wire [3:0] DIGITO1;
-wire [3:0] DIGITO2;
+wire D1;
+wire D2;
+wire D3;
+wire D4;
+wire D5;
+wire D6;
+wire D7;
+wire D8;
 
 // assign statements (if any)                          
-conversor_completo i1 (
+conv_2_digitos i1 (
 // port map - connection between master ports and signals/registers   
-	.DIGITO1(DIGITO1),
-	.DIGITO2(DIGITO2),
-	.E(E),
+	.D1(D1),
+	.D2(D2),
+	.D3(D3),
+	.D4(D4),
+	.D5(D5),
+	.D6(D6),
+	.D7(D7),
+	.D8(D8),
 	.F(F)
 );
 initial 
@@ -51,65 +61,52 @@ end
 // F[ 5 ]
 initial
 begin
-	repeat(15)
+	repeat(31)
 	begin
 		F[5] = 1'b0;
-		F[5] = #32000 1'b1;
-		# 32000;
+		F[5] = #16000 1'b1;
+		# 16000;
 	end
 	F[5] = 1'b0;
-	F[5] = #32000 1'b1;
 end 
 // F[ 4 ]
 initial
 begin
-	repeat(31)
+	repeat(62)
 	begin
 		F[4] = 1'b0;
-		F[4] = #16000 1'b1;
-		# 16000;
+		F[4] = #8000 1'b1;
+		# 8000;
 	end
 	F[4] = 1'b0;
 end 
 // F[ 3 ]
-initial
+always
 begin
-	repeat(62)
-	begin
-		F[3] = 1'b0;
-		F[3] = #8000 1'b1;
-		# 8000;
-	end
 	F[3] = 1'b0;
+	F[3] = #4000 1'b1;
+	#4000;
 end 
 // F[ 2 ]
 always
 begin
 	F[2] = 1'b0;
-	F[2] = #4000 1'b1;
-	#4000;
+	F[2] = #2000 1'b1;
+	#2000;
 end 
 // F[ 1 ]
 always
 begin
 	F[1] = 1'b0;
-	F[1] = #2000 1'b1;
-	#2000;
+	F[1] = #1000 1'b1;
+	#1000;
 end 
 // F[ 0 ]
 always
 begin
 	F[0] = 1'b0;
-	F[0] = #1000 1'b1;
-	#1000;
-end 
-
-// E
-always
-begin
-	E = 1'b0;
-	E = #10000 1'b1;
-	#10000;
+	F[0] = #500 1'b1;
+	#500;
 end 
 endmodule
 

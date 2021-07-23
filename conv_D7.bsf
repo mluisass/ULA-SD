@@ -22,7 +22,7 @@ https://fpgasoftware.intel.com/eula.
 (header "symbol" (version "1.2"))
 (symbol
 	(rect 16 16 112 144)
-	(text "conv_D7_novo" (rect 5 0 92 19)(font "Intel Clear" (font_size 8)))
+	(text "conv_D7" (rect 5 0 56 19)(font "Intel Clear" (font_size 8)))
 	(text "inst" (rect 8 107 24 124)(font "Intel Clear" ))
 	(port
 		(pt 0 32)

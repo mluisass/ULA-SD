@@ -1,34 +1,34 @@
 # do ULA.do
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 10:00:01 on Jul 23,2021
+# Start time: 12:32:34 on Jul 23,2021
 # vlog -work work ULA.vo 
-# -- Compiling module conv_D6
+# -- Compiling module conversor_completo
 # -- Compiling module hard_block
 # 
 # Top level modules:
-# 	conv_D6
-# End time: 10:00:01 on Jul 23,2021, Elapsed time: 0:00:00
+# 	conversor_completo
+# End time: 12:32:34 on Jul 23,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 10:00:01 on Jul 23,2021
-# vlog -work work Waveform8.vwf.vt 
-# -- Compiling module conv_D6_vlg_vec_tst
+# Start time: 12:32:34 on Jul 23,2021
+# vlog -work work Waveform17.vwf.vt 
+# -- Compiling module conversor_completo_vlg_vec_tst
 # 
 # Top level modules:
-# 	conv_D6_vlg_vec_tst
-# End time: 10:00:01 on Jul 23,2021, Elapsed time: 0:00:00
+# 	conversor_completo_vlg_vec_tst
+# End time: 12:32:35 on Jul 23,2021, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
-# vsim -c -t 1ps -L cycloneive_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.conv_D6_vlg_vec_tst 
-# Start time: 10:00:01 on Jul 23,2021
-# Loading work.conv_D6_vlg_vec_tst
-# Loading work.conv_D6
+# vsim -c -t 1ps -L cycloneive_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.conversor_completo_vlg_vec_tst 
+# Start time: 12:32:35 on Jul 23,2021
+# Loading work.conversor_completo_vlg_vec_tst
+# Loading work.conversor_completo
 # Loading work.hard_block
 # Loading cycloneive_ver.cycloneive_io_obuf
 # Loading cycloneive_ver.cycloneive_io_ibuf
 # Loading cycloneive_ver.cycloneive_lcell_comb
 # after#26
-# ** Note: $finish    : Waveform8.vwf.vt(51)
-#    Time: 1 us  Iteration: 0  Instance: /conv_D6_vlg_vec_tst
-# End time: 10:00:02 on Jul 23,2021, Elapsed time: 0:00:01
+# ** Note: $finish    : Waveform17.vwf.vt(49)
+#    Time: 1 us  Iteration: 0  Instance: /conversor_completo_vlg_vec_tst
+# End time: 12:32:35 on Jul 23,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0

@@ -19,58 +19,94 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "07/22/2021 19:05:40"
+// Generated on "07/23/2021 11:20:38"
                                                                                 
-// Verilog Test Bench (with test vectors) for design :                          conv_D3
+// Verilog Test Bench (with test vectors) for design :                          conv_2_digitos
 // 
 // Simulation tool : 3rd Party
 // 
 
 `timescale 1 ps/ 1 ps
-module conv_D3_vlg_vec_tst();
+module conv_2_digitos_vlg_vec_tst();
 // constants                                           
 // general purpose registers
-reg X2;
-reg X3;
-reg X4;
+reg [5:0] F;
 // wires                                               
+wire D1;
+wire D2;
 wire D3;
+wire D4;
+wire D5;
+wire D6;
+wire D7;
+wire D8;
 
 // assign statements (if any)                          
-conv_D3 i1 (
+conv_2_digitos i1 (
 // port map - connection between master ports and signals/registers   
+	.D1(D1),
+	.D2(D2),
 	.D3(D3),
-	.X2(X2),
-	.X3(X3),
-	.X4(X4)
+	.D4(D4),
+	.D5(D5),
+	.D6(D6),
+	.D7(D7),
+	.D8(D8),
+	.F(F)
 );
 initial 
 begin 
-#1000000 $stop;
+#1000000 $finish;
 end 
-
-// X4
+// F[ 5 ]
+initial
+begin
+	repeat(31)
+	begin
+		F[5] = 1'b0;
+		F[5] = #16000 1'b1;
+		# 16000;
+	end
+	F[5] = 1'b0;
+end 
+// F[ 4 ]
+initial
+begin
+	repeat(62)
+	begin
+		F[4] = 1'b0;
+		F[4] = #8000 1'b1;
+		# 8000;
+	end
+	F[4] = 1'b0;
+end 
+// F[ 3 ]
 always
 begin
-	X4 = 1'b0;
-	X4 = #20000 1'b1;
-	#20000;
+	F[3] = 1'b0;
+	F[3] = #4000 1'b1;
+	#4000;
 end 
-
-// X3
+// F[ 2 ]
 always
 begin
-	X3 = 1'b0;
-	X3 = #10000 1'b1;
-	#10000;
+	F[2] = 1'b0;
+	F[2] = #2000 1'b1;
+	#2000;
 end 
-
-// X2
+// F[ 1 ]
 always
 begin
-	X2 = 1'b0;
-	X2 = #5000 1'b1;
-	#5000;
+	F[1] = 1'b0;
+	F[1] = #1000 1'b1;
+	#1000;
+end 
+// F[ 0 ]
+always
+begin
+	F[0] = 1'b0;
+	F[0] = #500 1'b1;
+	#500;
 end 
 endmodule
 
