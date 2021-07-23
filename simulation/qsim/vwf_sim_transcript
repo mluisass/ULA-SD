@@ -7,7 +7,7 @@ Note: if both ModelSim-Altera and ModelSim executables are available, ModelSim-A
 
 **** Generating the ModelSim Testbench ****
 
-quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off ULA -c ULA --vector_source="C:/Users/55819/Desktop/ufpe/2020.2/SD/ULA-SD/Waveform.vwf" --testbench_file="C:/Users/55819/Desktop/ufpe/2020.2/SD/ULA-SD/simulation/qsim/Waveform.vwf.vt"
+quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off ULA -c ULA --vector_source="C:/Users/55819/Desktop/ufpe/2020.2/SD/ULA-SD/Waveform3.vwf" --testbench_file="C:/Users/55819/Desktop/ufpe/2020.2/SD/ULA-SD/simulation/qsim/Waveform3.vwf.vt"
 
 Info: *******************************************************************
 Info: Running Quartus Prime EDA Netlist Writer
@@ -26,9 +26,8 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details, at
     Info: https://fpgasoftware.intel.com/eula.
-    Info: Processing started: Thu Jul 22 23:42:20 2021
-Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off ULA -c ULA --vector_source=C:/Users/55819/Desktop/ufpe/2020.2/SD/ULA-SD/Waveform.vwf --testbench_file=C:/Users/55819/Desktop/ufpe/2020.2/SD/ULA-SD/simulation/qsim/Waveform.vwf.vt
-Info (119004): Automatically selected device EP4CE6E22C6 for design ULA
+    Info: Processing started: Fri Jul 23 01:25:01 2021
+Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off ULA -c ULA --vector_source=C:/Users/55819/Desktop/ufpe/2020.2/SD/ULA-SD/Waveform3.vwf --testbench_file=C:/Users/55819/Desktop/ufpe/2020.2/SD/ULA-SD/simulation/qsim/Waveform3.vwf.vt
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 
 Completed successfully. 
@@ -56,16 +55,15 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details, at
     Info: https://fpgasoftware.intel.com/eula.
-    Info: Processing started: Thu Jul 22 23:42:20 2021
+    Info: Processing started: Fri Jul 23 01:25:01 2021
 Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=C:/Users/55819/Desktop/ufpe/2020.2/SD/ULA-SD/simulation/qsim/ ULA -c ULA
-Info (119004): Automatically selected device EP4CE6E22C6 for design ULA
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (204019): Generated file ULA.vo in folder "C:/Users/55819/Desktop/ufpe/2020.2/SD/ULA-SD/simulation/qsim//" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4639 megabytes
-    Info: Processing ended: Thu Jul 22 23:42:21 2021
+    Info: Peak virtual memory: 4636 megabytes
+    Info: Processing ended: Fri Jul 23 01:25:02 2021
     Info: Elapsed time: 00:00:01
-    Info: Total CPU time (on all processors): 00:00:01
+    Info: Total CPU time (on all processors): 00:00:00
 
 Completed successfully. 
 
@@ -83,54 +81,55 @@ Reading pref.tcl
 
 # 2020.1
 
-
 # do ULA.do
+
 # ** Warning: (vlib-34) Library already exists at "work".
-
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 23:42:22 on Jul 22,2021
+# Start time: 01:25:02 on Jul 23,2021
 # vlog -work work ULA.vo 
-# -- Compiling module conversor_completo
+# -- Compiling module conv_2_digitos
+# -- Compiling module hard_block
 # 
 # Top level modules:
-# 	conversor_completo
-# End time: 23:42:22 on Jul 22,2021, Elapsed time: 0:00:00
+# 	conv_2_digitos
+# End time: 01:25:03 on Jul 23,2021, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 23:42:22 on Jul 22,2021
-# vlog -work work Waveform.vwf.vt 
-# -- Compiling module conversor_completo_vlg_vec_tst
+# Start time: 01:25:03 on Jul 23,2021
+# vlog -work work Waveform3.vwf.vt 
+# -- Compiling module conv_2_digitos_vlg_vec_tst
 # 
 # Top level modules:
-# 	conversor_completo_vlg_vec_tst
-# End time: 23:42:22 on Jul 22,2021, Elapsed time: 0:00:00
+# 	conv_2_digitos_vlg_vec_tst
+# End time: 01:25:03 on Jul 23,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 
-# vsim -c -t 1ps -L cycloneive_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.conversor_completo_vlg_vec_tst 
-# Start time: 23:42:22 on Jul 22,2021
-# Loading work.conversor_completo_vlg_vec_tst
-# Loading work.conversor_completo
+# vsim -c -t 1ps -L cycloneive_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.conv_2_digitos_vlg_vec_tst 
+# Start time: 01:25:03 on Jul 23,2021
+# Loading work.conv_2_digitos_vlg_vec_tst
+# Loading work.conv_2_digitos
+# Loading work.hard_block
 # Loading cycloneive_ver.cycloneive_io_obuf
 # Loading cycloneive_ver.cycloneive_io_ibuf
 # Loading cycloneive_ver.cycloneive_lcell_comb
-# after#25
-# ** Note: $finish    : Waveform.vwf.vt(49)
-#    Time: 1 us  Iteration: 0  Instance: /conversor_completo_vlg_vec_tst
-# End time: 23:42:23 on Jul 22,2021, Elapsed time: 0:00:01
+# after#26
+# ** Note: $finish    : Waveform3.vwf.vt(59)
+#    Time: 1 us  Iteration: 0  Instance: /conv_2_digitos_vlg_vec_tst
+# End time: 01:25:03 on Jul 23,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 
 Completed successfully. 
 
 **** Converting ModelSim VCD to vector waveform ****
 
-Reading C:/Users/55819/Desktop/ufpe/2020.2/SD/ULA-SD/Waveform.vwf...
+Reading C:/Users/55819/Desktop/ufpe/2020.2/SD/ULA-SD/Waveform3.vwf...
 
 Reading C:/Users/55819/Desktop/ufpe/2020.2/SD/ULA-SD/simulation/qsim/ULA.msim.vcd...
 
 Processing channel transitions... 
 
-Writing the resulting VWF to C:/Users/55819/Desktop/ufpe/2020.2/SD/ULA-SD/simulation/qsim/ULA_20210722234223.sim.vwf
+Writing the resulting VWF to C:/Users/55819/Desktop/ufpe/2020.2/SD/ULA-SD/simulation/qsim/ULA_20210723012503.sim.vwf
 
 Finished VCD to VWF conversion.
 

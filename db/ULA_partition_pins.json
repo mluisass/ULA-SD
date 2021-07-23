@@ -4,27 +4,27 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "DIGITO1[0]",
+					"name" : "D5",
 					"strict" : false
 				},
 				{
-					"name" : "DIGITO2[3]",
+					"name" : "D6",
 					"strict" : false
 				},
 				{
-					"name" : "DIGITO2[2]",
+					"name" : "D7",
 					"strict" : false
 				},
 				{
-					"name" : "DIGITO2[1]",
+					"name" : "D8",
 					"strict" : false
 				},
 				{
-					"name" : "DIGITO2[0]",
+					"name" : "D4",
 					"strict" : false
 				},
 				{
-					"name" : "E",
+					"name" : "F[4]",
 					"strict" : false
 				},
 				{
@@ -32,15 +32,11 @@
 					"strict" : false
 				},
 				{
-					"name" : "F[1]",
-					"strict" : false
-				},
-				{
 					"name" : "F[2]",
 					"strict" : false
 				},
 				{
-					"name" : "F[4]",
+					"name" : "F[1]",
 					"strict" : false
 				},
 				{
