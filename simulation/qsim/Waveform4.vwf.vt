@@ -19,68 +19,58 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "07/22/2021 15:48:17"
+// Generated on "07/23/2021 08:56:13"
                                                                                 
-// Verilog Test Bench (with test vectors) for design :                          dec_segmento_E
+// Verilog Test Bench (with test vectors) for design :                          conv_D3
 // 
 // Simulation tool : 3rd Party
 // 
 
 `timescale 1 ps/ 1 ps
-module dec_segmento_E_vlg_vec_tst();
+module conv_D3_vlg_vec_tst();
 // constants                                           
 // general purpose registers
-reg X0;
-reg X1;
 reg X2;
 reg X3;
+reg X4;
 // wires                                               
-wire e;
+wire D3;
 
 // assign statements (if any)                          
-dec_segmento_E i1 (
+conv_D3 i1 (
 // port map - connection between master ports and signals/registers   
-	.e(e),
-	.X0(X0),
-	.X1(X1),
+	.D3(D3),
 	.X2(X2),
-	.X3(X3)
+	.X3(X3),
+	.X4(X4)
 );
 initial 
 begin 
-#1000000 $finish;
+#1000000 $stop;
+end 
+
+// X4
+always
+begin
+	X4 = 1'b0;
+	X4 = #20000 1'b1;
+	#20000;
 end 
 
 // X3
 always
 begin
 	X3 = 1'b0;
-	X3 = #20000 1'b1;
-	#20000;
+	X3 = #10000 1'b1;
+	#10000;
 end 
 
 // X2
 always
 begin
 	X2 = 1'b0;
-	X2 = #10000 1'b1;
-	#10000;
-end 
-
-// X1
-always
-begin
-	X1 = 1'b0;
-	X1 = #5000 1'b1;
+	X2 = #5000 1'b1;
 	#5000;
-end 
-
-// X0
-always
-begin
-	X0 = 1'b0;
-	X0 = #2500 1'b1;
-	#2500;
 end 
 endmodule
 
