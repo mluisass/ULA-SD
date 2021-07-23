@@ -381,7 +381,7 @@ https://fpgasoftware.intel.com/eula.
 (symbol
 	(rect 296 384 392 576)
 	(text "conv_2_digitos" (rect 5 0 94 19)(font "Intel Clear" (font_size 8)))
-	(text "inst5" (rect 8 171 30 188)(font "Intel Clear" ))
+	(text "inst1" (rect 8 171 30 188)(font "Intel Clear" ))
 	(port
 		(pt 0 32)
 		(input)
