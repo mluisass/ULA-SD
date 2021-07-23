@@ -455,6 +455,11 @@ https://fpgasoftware.intel.com/eula.
 	(bus)
 )
 (connector
+	(text "I[4]" (rect 800 641 817 656)(font "Intel Clear" )(vertical))
+	(pt 824 632)
+	(pt 824 672)
+)
+(connector
 	(pt 608 432)
 	(pt 608 480)
 	(bus)
@@ -498,6 +503,12 @@ https://fpgasoftware.intel.com/eula.
 	(bus)
 )
 (connector
+	(text "I[5..0]" (rect 482 656 507 673)(font "Intel Clear" ))
+	(pt 464 672)
+	(pt 608 672)
+	(bus)
+)
+(connector
 	(pt 608 672)
 	(pt 824 672)
 	(bus)
@@ -527,17 +538,6 @@ https://fpgasoftware.intel.com/eula.
 (connector
 	(pt 792 512)
 	(pt 792 536)
-)
-(connector
-	(text "I[5..0]" (rect 482 656 507 673)(font "Intel Clear" ))
-	(pt 464 672)
-	(pt 608 672)
-	(bus)
-)
-(connector
-	(text "I[4]" (rect 800 641 817 656)(font "Intel Clear" )(vertical))
-	(pt 824 632)
-	(pt 824 672)
 )
 (junction (pt 1000 432))
 (junction (pt 1016 432))

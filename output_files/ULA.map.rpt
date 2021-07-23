@@ -1,5 +1,5 @@
 Analysis & Synthesis report for ULA
-Thu Jul 22 16:58:48 2021
+Thu Jul 22 23:40:16 2021
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -43,16 +43,16 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Jul 22 16:58:48 2021       ;
+; Analysis & Synthesis Status        ; Successful - Thu Jul 22 23:40:16 2021       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; ULA                                         ;
-; Top-level Entity Name              ; SEM_ENABLE                                  ;
+; Top-level Entity Name              ; conversor_completo                          ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 12                                          ;
-;     Total combinational functions  ; 12                                          ;
+; Total logic elements               ; 8                                           ;
+;     Total combinational functions  ; 8                                           ;
 ;     Dedicated logic registers      ; 0                                           ;
 ; Total registers                    ; 0                                           ;
-; Total pins                         ; 17                                          ;
+; Total pins                         ; 15                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
 ; Embedded Multiplier 9-bit elements ; 0                                           ;
@@ -65,7 +65,7 @@ https://fpgasoftware.intel.com/eula.
 +------------------------------------------------------------------+--------------------+--------------------+
 ; Option                                                           ; Setting            ; Default Value      ;
 +------------------------------------------------------------------+--------------------+--------------------+
-; Top-level entity name                                            ; SEM_ENABLE         ; ULA                ;
+; Top-level entity name                                            ; conversor_completo ; ULA                ;
 ; Family name                                                      ; Cyclone IV E       ; Cyclone V          ;
 ; Use smart compilation                                            ; Off                ; Off                ;
 ; Enable parallel Assembler and Timing Analyzer during compilation ; On                 ; On                 ;
@@ -161,67 +161,71 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                              ;
-+----------------------------------+-----------------+------------------------------------+-----------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                    ; Library ;
-+----------------------------------+-----------------+------------------------------------+-----------------------------------------------------------------+---------+
-; MaiorQue9.bdf                    ; yes             ; User Block Diagram/Schematic File  ; C:/Users/55819/Desktop/ufpe/2020.2/SD/ULA-SD/MaiorQue9.bdf      ;         ;
-; MenorQue1Bit.bdf                 ; yes             ; User Block Diagram/Schematic File  ; C:/Users/55819/Desktop/ufpe/2020.2/SD/ULA-SD/MenorQue1Bit.bdf   ;         ;
-; dec_segmento_G.bdf               ; yes             ; User Block Diagram/Schematic File  ; C:/Users/55819/Desktop/ufpe/2020.2/SD/ULA-SD/dec_segmento_G.bdf ;         ;
-; dec_segmento_F.bdf               ; yes             ; User Block Diagram/Schematic File  ; C:/Users/55819/Desktop/ufpe/2020.2/SD/ULA-SD/dec_segmento_F.bdf ;         ;
-; dec_segmento_D.bdf               ; yes             ; User Block Diagram/Schematic File  ; C:/Users/55819/Desktop/ufpe/2020.2/SD/ULA-SD/dec_segmento_D.bdf ;         ;
-; dec_segmento_A.bdf               ; yes             ; User Block Diagram/Schematic File  ; C:/Users/55819/Desktop/ufpe/2020.2/SD/ULA-SD/dec_segmento_A.bdf ;         ;
-; dec_segmento_B.bdf               ; yes             ; User Block Diagram/Schematic File  ; C:/Users/55819/Desktop/ufpe/2020.2/SD/ULA-SD/dec_segmento_B.bdf ;         ;
-; dec_segmento_C.bdf               ; yes             ; User Block Diagram/Schematic File  ; C:/Users/55819/Desktop/ufpe/2020.2/SD/ULA-SD/dec_segmento_C.bdf ;         ;
-; dec_segmento_E.bdf               ; yes             ; User Block Diagram/Schematic File  ; C:/Users/55819/Desktop/ufpe/2020.2/SD/ULA-SD/dec_segmento_E.bdf ;         ;
-; SEM_ENABLE.bdf                   ; yes             ; User Block Diagram/Schematic File  ; C:/Users/55819/Desktop/ufpe/2020.2/SD/ULA-SD/SEM_ENABLE.bdf     ;         ;
-+----------------------------------+-----------------+------------------------------------+-----------------------------------------------------------------+---------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                  ;
++----------------------------------+-----------------+------------------------------------+---------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                        ; Library ;
++----------------------------------+-----------------+------------------------------------+---------------------------------------------------------------------+---------+
+; conv_seletor.bdf                 ; yes             ; User Block Diagram/Schematic File  ; C:/Users/55819/Desktop/ufpe/2020.2/SD/ULA-SD/conv_seletor.bdf       ;         ;
+; mux_2x1.bdf                      ; yes             ; User Block Diagram/Schematic File  ; C:/Users/55819/Desktop/ufpe/2020.2/SD/ULA-SD/mux_2x1.bdf            ;         ;
+; conv_D7.bdf                      ; yes             ; User Block Diagram/Schematic File  ; C:/Users/55819/Desktop/ufpe/2020.2/SD/ULA-SD/conv_D7.bdf            ;         ;
+; conv_D5.bdf                      ; yes             ; User Block Diagram/Schematic File  ; C:/Users/55819/Desktop/ufpe/2020.2/SD/ULA-SD/conv_D5.bdf            ;         ;
+; conv_D3.bdf                      ; yes             ; User Block Diagram/Schematic File  ; C:/Users/55819/Desktop/ufpe/2020.2/SD/ULA-SD/conv_D3.bdf            ;         ;
+; conv_D6.bdf                      ; yes             ; User Block Diagram/Schematic File  ; C:/Users/55819/Desktop/ufpe/2020.2/SD/ULA-SD/conv_D6.bdf            ;         ;
+; conv_1_digito.bdf                ; yes             ; User Block Diagram/Schematic File  ; C:/Users/55819/Desktop/ufpe/2020.2/SD/ULA-SD/conv_1_digito.bdf      ;         ;
+; conv_2_digitos.bdf               ; yes             ; User Block Diagram/Schematic File  ; C:/Users/55819/Desktop/ufpe/2020.2/SD/ULA-SD/conv_2_digitos.bdf     ;         ;
+; conversor_completo.bdf           ; yes             ; User Block Diagram/Schematic File  ; C:/Users/55819/Desktop/ufpe/2020.2/SD/ULA-SD/conversor_completo.bdf ;         ;
+; conv_D4.bdf                      ; yes             ; User Block Diagram/Schematic File  ; C:/Users/55819/Desktop/ufpe/2020.2/SD/ULA-SD/conv_D4.bdf            ;         ;
++----------------------------------+-----------------+------------------------------------+---------------------------------------------------------------------+---------+
 
 
-+----------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary              ;
-+---------------------------------------------+------------+
-; Resource                                    ; Usage      ;
-+---------------------------------------------+------------+
-; Estimated Total logic elements              ; 12         ;
-;                                             ;            ;
-; Total combinational functions               ; 12         ;
-; Logic element usage by number of LUT inputs ;            ;
-;     -- 4 input functions                    ; 8          ;
-;     -- 3 input functions                    ; 3          ;
-;     -- <=2 input functions                  ; 1          ;
-;                                             ;            ;
-; Logic elements by mode                      ;            ;
-;     -- normal mode                          ; 12         ;
-;     -- arithmetic mode                      ; 0          ;
-;                                             ;            ;
-; Total registers                             ; 0          ;
-;     -- Dedicated logic registers            ; 0          ;
-;     -- I/O registers                        ; 0          ;
-;                                             ;            ;
-; I/O pins                                    ; 17         ;
-;                                             ;            ;
-; Embedded Multiplier 9-bit elements          ; 0          ;
-;                                             ;            ;
-; Maximum fan-out node                        ; X[0]~input ;
-; Maximum fan-out                             ; 9          ;
-; Total fan-out                               ; 67         ;
-; Average fan-out                             ; 1.46       ;
-+---------------------------------------------+------------+
++-------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary           ;
++---------------------------------------------+---------+
+; Resource                                    ; Usage   ;
++---------------------------------------------+---------+
+; Estimated Total logic elements              ; 8       ;
+;                                             ;         ;
+; Total combinational functions               ; 8       ;
+; Logic element usage by number of LUT inputs ;         ;
+;     -- 4 input functions                    ; 4       ;
+;     -- 3 input functions                    ; 3       ;
+;     -- <=2 input functions                  ; 1       ;
+;                                             ;         ;
+; Logic elements by mode                      ;         ;
+;     -- normal mode                          ; 8       ;
+;     -- arithmetic mode                      ; 0       ;
+;                                             ;         ;
+; Total registers                             ; 0       ;
+;     -- Dedicated logic registers            ; 0       ;
+;     -- I/O registers                        ; 0       ;
+;                                             ;         ;
+; I/O pins                                    ; 15      ;
+;                                             ;         ;
+; Embedded Multiplier 9-bit elements          ; 0       ;
+;                                             ;         ;
+; Maximum fan-out node                        ; E~input ;
+; Maximum fan-out                             ; 5       ;
+; Total fan-out                               ; 47      ;
+; Average fan-out                             ; 1.24    ;
++---------------------------------------------+---------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                     ;
-+----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------+----------------+--------------+
-; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                             ; Entity Name    ; Library Name ;
-+----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------+----------------+--------------+
-; |SEM_ENABLE                ; 12 (9)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 17   ; 0            ; |SEM_ENABLE                                     ; SEM_ENABLE     ; work         ;
-;    |MaiorQue9:inst10|      ; 1 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SEM_ENABLE|MaiorQue9:inst10                    ; MaiorQue9      ; work         ;
-;       |MenorQue1Bit:inst4| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SEM_ENABLE|MaiorQue9:inst10|MenorQue1Bit:inst4 ; MenorQue1Bit   ; work         ;
-;    |dec_segmento_C:seg_C|  ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SEM_ENABLE|dec_segmento_C:seg_C                ; dec_segmento_C ; work         ;
-;    |dec_segmento_G:seg_G|  ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SEM_ENABLE|dec_segmento_G:seg_G                ; dec_segmento_G ; work         ;
-+----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------+----------------+--------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                 ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------+--------------------+--------------+
+; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                     ; Entity Name        ; Library Name ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------+--------------------+--------------+
+; |conversor_completo        ; 8 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 15   ; 0            ; |conversor_completo                                     ; conversor_completo ; work         ;
+;    |conv_2_digitos:inst11| ; 1 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |conversor_completo|conv_2_digitos:inst11               ; conv_2_digitos     ; work         ;
+;       |conv_D6:inst6|      ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |conversor_completo|conv_2_digitos:inst11|conv_D6:inst6 ; conv_D6            ; work         ;
+;    |conv_seletor:inst2|    ; 6 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |conversor_completo|conv_seletor:inst2                  ; conv_seletor       ; work         ;
+;       |mux_2x1:mux2x1_1|   ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |conversor_completo|conv_seletor:inst2|mux_2x1:mux2x1_1 ; mux_2x1            ; work         ;
+;       |mux_2x1:mux2x1_2|   ; 3 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |conversor_completo|conv_seletor:inst2|mux_2x1:mux2x1_2 ; mux_2x1            ; work         ;
+;       |mux_2x1:mux2x1_3|   ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |conversor_completo|conv_seletor:inst2|mux_2x1:mux2x1_3 ; mux_2x1            ; work         ;
+;    |conv_seletor:inst|     ; 1 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |conversor_completo|conv_seletor:inst                   ; conv_seletor       ; work         ;
+;       |mux_2x1:mux2x1_4|   ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |conversor_completo|conv_seletor:inst|mux_2x1:mux2x1_4  ; mux_2x1            ; work         ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------+--------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -245,16 +249,16 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 17                          ;
-; cycloneiii_lcell_comb ; 19                          ;
-;     normal            ; 19                          ;
-;         1 data inputs ; 7                           ;
+; boundary_port         ; 15                          ;
+; cycloneiii_lcell_comb ; 9                           ;
+;     normal            ; 9                           ;
+;         0 data inputs ; 1                           ;
 ;         2 data inputs ; 1                           ;
 ;         3 data inputs ; 3                           ;
-;         4 data inputs ; 8                           ;
+;         4 data inputs ; 4                           ;
 ;                       ;                             ;
-; Max LUT depth         ; 3.00                        ;
-; Average LUT depth     ; 3.00                        ;
+; Max LUT depth         ; 2.00                        ;
+; Average LUT depth     ; 1.73                        ;
 +-----------------------+-----------------------------+
 
 
@@ -273,7 +277,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Thu Jul 22 16:58:39 2021
+    Info: Processing started: Thu Jul 22 23:40:07 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ULA -c ULA
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -327,8 +331,6 @@ Info (12021): Found 1 design units, including 1 entities, in source file conv_d5
     Info (12023): Found entity 1: conv_D5
 Info (12021): Found 1 design units, including 1 entities, in source file conv_d3.bdf
     Info (12023): Found entity 1: conv_D3
-Info (12021): Found 1 design units, including 1 entities, in source file conv_d2.bdf
-    Info (12023): Found entity 1: conv_D2
 Info (12021): Found 1 design units, including 1 entities, in source file dec_segmento_g.bdf
     Info (12023): Found entity 1: dec_segmento_G
 Info (12021): Found 1 design units, including 1 entities, in source file dec_segmento_f.bdf
@@ -363,36 +365,41 @@ Info (12021): Found 1 design units, including 1 entities, in source file ula_com
     Info (12023): Found entity 1: ULA_completo
 Info (12021): Found 1 design units, including 1 entities, in source file somador_5_bits.bdf
     Info (12023): Found entity 1: somador_5_bits
-Info (12021): Found 1 design units, including 1 entities, in source file conv_completo_2_digitos.bdf
-    Info (12023): Found entity 1: conv_completo_2_digitos
-Info (12021): Found 1 design units, including 1 entities, in source file conv_completo_1_digito.bdf
-    Info (12023): Found entity 1: conv_completo_1_digito
 Info (12021): Found 1 design units, including 1 entities, in source file sem_enable.bdf
     Info (12023): Found entity 1: SEM_ENABLE
-Info (12127): Elaborating entity "SEM_ENABLE" for the top level hierarchy
-Info (12128): Elaborating entity "dec_segmento_G" for hierarchy "dec_segmento_G:seg_G"
-Info (12128): Elaborating entity "MaiorQue9" for hierarchy "MaiorQue9:inst10"
-Info (12128): Elaborating entity "MenorQue1Bit" for hierarchy "MaiorQue9:inst10|MenorQue1Bit:inst4"
-Info (12128): Elaborating entity "dec_segmento_F" for hierarchy "dec_segmento_F:seg_F"
-Info (12128): Elaborating entity "dec_segmento_A" for hierarchy "dec_segmento_A:seg_A"
-Info (12128): Elaborating entity "dec_segmento_B" for hierarchy "dec_segmento_B:seg_B"
-Info (12128): Elaborating entity "dec_segmento_C" for hierarchy "dec_segmento_C:seg_C"
-Info (12128): Elaborating entity "dec_segmento_D" for hierarchy "dec_segmento_D:seg_D"
-Info (12128): Elaborating entity "dec_segmento_E" for hierarchy "dec_segmento_E:inst1"
+Info (12021): Found 1 design units, including 1 entities, in source file conv_d4.bdf
+    Info (12023): Found entity 1: conv_D4
+Info (12127): Elaborating entity "conversor_completo" for the top level hierarchy
+Info (12128): Elaborating entity "conv_seletor" for hierarchy "conv_seletor:inst"
+Info (12128): Elaborating entity "mux_2x1" for hierarchy "conv_seletor:inst|mux_2x1:mux2x1_1"
+Info (12128): Elaborating entity "conv_2_digitos" for hierarchy "conv_2_digitos:inst11"
+Warning (275011): Block or symbol "conv_D3" of instance "inst" overlaps another block or symbol
+Warning (275043): Pin "D3" is missing source
+Info (12128): Elaborating entity "conv_D5" for hierarchy "conv_2_digitos:inst11|conv_D5:inst2"
+Info (12128): Elaborating entity "conv_D6" for hierarchy "conv_2_digitos:inst11|conv_D6:inst6"
+Warning (275008): Primitive "NOT" of instance "not_x1" not used
+Warning (275008): Primitive "NOT" of instance "not_X3" not used
+Info (12128): Elaborating entity "conv_D7" for hierarchy "conv_2_digitos:inst11|conv_D7:C_D7"
+Info (12128): Elaborating entity "conv_D4" for hierarchy "conv_2_digitos:inst11|conv_D4:inst3"
+Info (12128): Elaborating entity "conv_D3" for hierarchy "conv_2_digitos:inst11|conv_D3:inst"
+Info (12128): Elaborating entity "conv_1_digito" for hierarchy "conv_1_digito:inst3"
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "DIGITO1[3]" is stuck at GND
+    Warning (13410): Pin "DIGITO1[2]" is stuck at GND
+    Warning (13410): Pin "DIGITO1[1]" is stuck at GND
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 2 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "Y[5]"
-    Warning (15610): No output dependent on input pin "Y[0]"
-Info (21057): Implemented 29 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 10 input pins
-    Info (21059): Implemented 7 output pins
-    Info (21061): Implemented 12 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 4 warnings
-    Info: Peak virtual memory: 4745 megabytes
-    Info: Processing ended: Thu Jul 22 16:58:48 2021
+Warning (21074): Design contains 1 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "F[5]"
+Info (21057): Implemented 23 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 7 input pins
+    Info (21059): Implemented 8 output pins
+    Info (21061): Implemented 8 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 11 warnings
+    Info: Peak virtual memory: 4737 megabytes
+    Info: Processing ended: Thu Jul 22 23:40:16 2021
     Info: Elapsed time: 00:00:09
-    Info: Total CPU time (on all processors): 00:00:23
+    Info: Total CPU time (on all processors): 00:00:21
 
 
