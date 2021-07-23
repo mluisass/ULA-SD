@@ -985,7 +985,7 @@ https://fpgasoftware.intel.com/eula.
 (symbol
 	(rect 1688 784 1864 880)
 	(text "conversor_completo" (rect 5 0 124 19)(font "Intel Clear" (font_size 8)))
-	(text "converter" (rect 8 75 52 92)(font "Intel Clear" ))
+	(text "conversor" (rect 8 75 54 92)(font "Intel Clear" ))
 	(port
 		(pt 0 32)
 		(input)
